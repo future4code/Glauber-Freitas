@@ -110,6 +110,12 @@ td button {
     border-radius: 5px;
     color: black;
 }
+td button:hover{
+    background-color: #ad9a45;
+}
+td button:active{
+    color: white;
+}
 
 /* td image{
     height: 50px;
