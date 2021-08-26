@@ -42,6 +42,10 @@ div img {
     /* background: black; */
 }
 
+ol{
+    list-style-position: inside;
+}
+
 .botao-amarelo {
     background-color: #ffaf43;
     width: 250px;
