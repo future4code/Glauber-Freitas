@@ -9,6 +9,15 @@ const IconImage = styled.img`
 `
 
 export function IconeComContador(props) {
+	let aux = props.iconeCompartilhar
+	if (aux.length>0){	
+	return <IconContainer>
+		<IconImage alt={'Icone'} src={props.icone} onClick={props.onClickIcone}/>
+		<p>{props.valorContador}</p>
+		<IconImage alt={"Icone"} src={props.iconeCompartilhar} onClick={props.onClickCompartilhar}/>
+	</IconContainer>
+	}
+	else 
 	return <IconContainer>
 		<IconImage alt={'Icone'} src={props.icone} onClick={props.onClickIcone}/>
 		<p>{props.valorContador}</p>

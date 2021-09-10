@@ -7,7 +7,8 @@ import iconeCoracaoBranco from '../../img/favorite-white.svg'
 import iconeCoracaoPreto from '../../img/favorite.svg'
 import iconeComentario from '../../img/comment_icon.svg'
 import {SecaoComentario} from '../SecaoComentario/SecaoComentario'
-
+import compartilharBranco from '../../img/bookmark_border_black_24dp.svg'
+import compartilharPreto from '../../img/bookmark_black_24dp.svg'
 
 // Styled Components
 const PostContainer = styled.div`
@@ -48,7 +49,8 @@ class Post extends React.Component {
     numeroCurtidas: 5,
     comentando: false,
     numeroComentarios: 0,
-    curtidoInicial: false
+    curtidoInicial: false,
+    compartilhado: false,
   }
 // Como a propriedade "curtido" se altera quando clica no ícone
 // criei uma outra propriedade para armazenar esse valor inicial 
@@ -65,6 +67,13 @@ class Post extends React.Component {
     this.setState({
       comentando: !this.state.comentando
     })
+  }
+
+  onClickCompartilhar = () => {
+    this.setState({
+      compartilhado: !this.state.compartilhado
+})
+
   }
 
   aoEnviarComentario = () => {
@@ -95,6 +104,15 @@ class Post extends React.Component {
       componenteComentario = <SecaoComentario aoEnviar={this.aoEnviarComentario}/>
     }
 
+let compartilhar
+
+    if(this.state.compartilhado){
+      compartilhar = compartilharPreto
+    }else{
+      compartilhar = compartilharBranco
+    }
+  
+
     return <PostContainer>
       <PostHeader>
         <UserPhoto src={this.props.fotoUsuario} alt={'Imagem do usuario'}/>
@@ -108,12 +126,15 @@ class Post extends React.Component {
           icone={iconeCurtida}
           onClickIcone={this.onClickCurtida}
           valorContador={numeroCurtida}
+          iconeCompartilhar = {""}
         />
 
         <IconeComContador
           icone={iconeComentario}
           onClickIcone={this.onClickComentario}
           valorContador={this.state.numeroComentarios}
+          iconeCompartilhar={compartilhar}
+          onClickCompartilhar={this.onClickCompartilhar}
         />
       </PostFooter>
       {componenteComentario}
