@@ -8,7 +8,7 @@ function App() {
         <div className="Etapa3">
             <h1>Etapa 3 - INFORMAÇÕES GERAIS DE ENSINO</h1>
     
-            <PerguntaAberta pergunta={"Por que você não terminou um curso de graduação?"}/>
+            <PerguntaAberta pergunta={"5. Por que você não terminou um curso de graduação?"}/>
             <PerguntaFechada 
                 pergunta={"6. Você fez algum curso complementar?"}
                 opcoes={[
