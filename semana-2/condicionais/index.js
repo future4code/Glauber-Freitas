@@ -102,86 +102,94 @@
 
 // 2 -
 
-const nome = prompt("Digite seu nome:")
-let tipoJogo = prompt("Digite o tipo de jogo IN para internacional ou DO para domestico").toUpperCase() 
-let etapaJogo = prompt("Digite a etapa do joogo. SF para semi-final, DT para decisão de terceiro lugar e FI final").toUpperCase()
-const categoriaJogo = prompt("Digite a categoria. De 1 a 4")
-const quantidadeIngresso = Number(prompt("Digite a quantidade de ingressos"))
-let valorIngresso = 0
-let = valorIngressoInter = 0
+// const nome = prompt("Digite seu nome:")
+// let tipoJogo = prompt("Digite o tipo de jogo IN para internacional ou DO para domestico").toUpperCase() 
+// let etapaJogo = prompt("Digite a etapa do joogo. SF para semi-final, DT para decisão de terceiro lugar e FI final").toUpperCase()
+// const categoriaJogo = prompt("Digite a categoria. De 1 a 4")
+// const quantidadeIngresso = Number(prompt("Digite a quantidade de ingressos"))
+// let valorIngresso = 0
+// let = valorIngressoInter = 0
 
-switch (categoriaJogo){
-    case "1":
-    switch (etapaJogo){
-        case "SF":
-            valorIngresso = 1320
-        break
-        case "DT":
-            valorIngresso = 660
-        break
-        case "FI":
-            valorIngresso =1980
-        break
-    }
-    break
-    case "2":
-    switch (etapaJogo){
-        case "SF":
-            valorIngresso = 880
-        break
-        case "DT":
-            valorIngresso = 440
-        break
-        case "FI":
-            valorIngresso = 1320
-        break   
-        }
-    case "3":
-    switch (etapaJogo){
-        case "SF":
-            valorIngresso = 550
-        break
-        case "DT":
-            valorIngresso = 330
-        break
-        case "FI":
-            valorIngresso = 880
-        break
-    case "4":
-    }
-    switch (etapaJogo){
-        case "SF":
-            valorIngresso = 220
-        break
-        case "DT":
-            valorIngresso = 170
-        break
-        case "FI":
-            valorIngresso = 330
-        break
-    }
-}
+// switch (categoriaJogo){
+//     case "1":
+//     switch (etapaJogo){
+//         case "SF":
+//             valorIngresso = 1320
+//         break
+//         case "DT":
+//             valorIngresso = 660
+//         break
+//         case "FI":
+//             valorIngresso =1980
+//         break
+//     }
+//     break
+//     case "2":
+//     switch (etapaJogo){
+//         case "SF":
+//             valorIngresso = 880
+//         break
+//         case "DT":
+//             valorIngresso = 440
+//         break
+//         case "FI":
+//             valorIngresso = 1320
+//         break   
+//         }
+//     case "3":
+//     switch (etapaJogo){
+//         case "SF":
+//             valorIngresso = 550
+//         break
+//         case "DT":
+//             valorIngresso = 330
+//         break
+//         case "FI":
+//             valorIngresso = 880
+//         break
+//     case "4":
+//     }
+//     switch (etapaJogo){
+//         case "SF":
+//             valorIngresso = 220
+//         break
+//         case "DT":
+//             valorIngresso = 170
+//         break
+//         case "FI":
+//             valorIngresso = 330
+//         break
+//     }
+// }
 
-if (tipoJogo === "IN"){
-    valorIngressoInter = Number(valorIngresso * 4.1)
-    tipoJogo = "Internacional"
-    valorIngresso = valorIngressoInter
-} else tipoJogo = "Doméstico"
+// if (tipoJogo === "IN"){
+//     valorIngressoInter = Number(valorIngresso * 4.1)
+//     tipoJogo = "Internacional"
+//     valorIngresso = valorIngressoInter
+// } else tipoJogo = "Doméstico"
 
-if (etapaJogo === "FI")
-    etapaJogo = "Final"
-    else if (etapaJogo === "SF")
-    etapaJogo = "SemiFinal"
-    else etapaJogo = "Decisão do 3º Lugar"
+// if (etapaJogo === "FI")
+//     etapaJogo = "Final"
+//     else if (etapaJogo === "SF")
+//     etapaJogo = "SemiFinal"
+//     else etapaJogo = "Decisão do 3º Lugar"
 
-const valorTotal = Number(valorIngresso * quantidadeIngresso)
-console.log(`
-------Dados da compra------
-Nome do Cliente: ${nome}
-Tipo de jogo: ${tipoJogo}
-Etapa do jogo: ${etapaJogo}
-Categoria: ${categoriaJogo}
-Quantidade de Ingressos: ${quantidadeIngresso} ingressos
-----Valores----
-Valor do Ingresso: R$ ${valorIngresso}
-Valor toal: R$ ${valorTotal}`)
+// const valorTotal = Number(valorIngresso * quantidadeIngresso)
+// console.log(`
+// ------Dados da compra------
+// Nome do Cliente: ${nome}
+// Tipo de jogo: ${tipoJogo}
+// Etapa do jogo: ${etapaJogo}
+// Categoria: ${categoriaJogo}
+// Quantidade de Ingressos: ${quantidadeIngresso} ingressos
+// ----Valores----
+// Valor do Ingresso: R$ ${valorIngresso}
+// Valor toal: R$ ${valorTotal}`)
+
+
+const anoAtual = Number(prompt("Digite o ano atual"))
+const anoNascimento = Number(prompt("Digite o ano de seu nascimento"))
+const podeVotar = anoAtual-anoNascimento
+if(podeVotar>=18)
+    alert("Você pode votar esse ano!")
+    else alert("Você não pode votar esse ano")
