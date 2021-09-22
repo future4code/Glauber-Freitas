@@ -12,33 +12,27 @@ export default class ListaUsuarios extends React.Component{
         users:[]
     }
 
-    
-
-    getAllUsers = ()=>{
+    getAllUsers = async() =>{
         const url = "https://us-central1-labenu-apis.cloudfunctions.net/labenusers/users"
-        axios
-            .get(url, headers)
-            .then((res)=>{
-                this.setState({users: res.data})
-                console.log(this.state.users)
-            })
-            .catch((err)=>{
-                            console.log(err.response)
-                        })
+        try{
+            const res = await axios.get(url, headers)
+            this.setState({users: res.data})
+            console.log(this.state.users)
+
+        } catch(err){
+            alert(err.response)
+        }
     }
 
-    deleteUser = (id) =>{
+    deleteUser = async (id) =>{
         const url= `https://us-central1-labenu-apis.cloudfunctions.net/labenusers/users/${id}`
-        axios
-            .delete(url, headers)
-            .then((res)=>{
-                this.getAllUsers()
-            })
-            .catch((err)=>{
-                console.log(err.response)
-            })
+        try{
+            const res = await axios.delete(url, headers)
+            this.getAllUsers()
+        } catch(err){
+            console.log(err.response)
+        }
     }
-
 
     componentDidMount(){
         this.getAllUsers()

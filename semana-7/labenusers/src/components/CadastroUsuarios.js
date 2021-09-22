@@ -22,23 +22,19 @@ export default class CadastroUsuarios extends React.Component{
         this.setState({userEmail: event.target.value})
     }
 
-    createUser = () => {
+    createUser = async () =>{
         const url = "https://us-central1-labenu-apis.cloudfunctions.net/labenusers/users"
         const body = {
                 "name": this.state.userName,
                 "email": this.state.userEmail
         }
-
-        axios
-            .post(url, body, headers)
-            .then((res)=>{
-                console.log("Seu usuário foi criado")
-                this.setState({userName: "",userEmail:""})
-                alert("Usuário Criado")
-            })
-            .catch((err)=>{
-                alert(err.response.data.message)
-            })
+        try{
+            const res = await axios.post(url, body, headers)
+            this.setState({userName: "",userEmail:""})
+            alert("Usuário Criado")
+        }catch(err){
+            alert(err.response.data.message)
+        }
     }
 
     render(){
