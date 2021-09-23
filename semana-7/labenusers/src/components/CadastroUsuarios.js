@@ -52,6 +52,7 @@ export default class CadastroUsuarios extends React.Component{
                     onChange={this.handleUserEmail}
                 /><br></br>
                 <button onClick={this.createUser}>Salvar</button>
+                <button onClick ={()=> this.props.lista()}>Lista de usuários</button>
             </div>
         )
     }

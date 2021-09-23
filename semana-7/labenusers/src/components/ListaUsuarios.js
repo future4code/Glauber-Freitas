@@ -17,7 +17,7 @@ export default class ListaUsuarios extends React.Component{
         try{
             const res = await axios.get(url, headers)
             this.setState({users: res.data})
-            console.log(this.state.users)
+            // console.log(this.state.users)
 
         } catch(err){
             alert(err.response)
@@ -47,13 +47,15 @@ export default class ListaUsuarios extends React.Component{
             return( 
                 <div>
                     <li key={user.id}>{user.name}
-                    <button onClick ={()=> this.deleteUser(user.id)}>X</button></li>
+                    <button onClick ={()=> this.props.detalhar(user.id)}>Detalhes</button>
+                    <button onClick ={()=> this.deleteUser(user.id)}>Excluir</button></li>
                 </div>)
         })
         return(
             <div>
                 <h1>Lista de Usuários</h1>
                 {listaUsers}
+                <button onClick ={()=> this.props.principal()}>Voltar</button>
             </div>
         )
     }
