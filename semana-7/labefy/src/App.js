@@ -1,6 +1,36 @@
 import React from 'react';
 import './App.css';
 import axios from 'axios'
+import styled from 'styled-components'
+
+
+const Titulo = styled.h1`
+font-size: 80px;
+font-family: 'Metal Mania', cursive;
+`
+
+const Iframe = styled.iframe`
+  
+  height: 80px;
+  width: 500px;
+`
+const Detalhes = styled.div`
+  display: flex;
+  justify-content: center
+`
+
+const Playlists = styled.div`
+  font-size: 20px;
+  font-weight: bolder;
+  width: 250px;
+  display: flex;
+  justify-content: space-between;
+`
+
+const Main = styled.div`
+  text-align: center;
+  background-color: #444;
+`
 
 const headers = {
   headers:{
@@ -12,8 +42,13 @@ export default class App extends React.Component {
   state={
     playlists:[],
     tracks:[],
+    trackName:"",
+    trackAutor:"",
+    trackUrl:"",
+    trackId:"",
     playlistName:"",
-    playlistNameDetails:""
+    playlistNameDetails:"",
+    playlistId:"",
   }
 
   getAllPlaylists = async() =>{
@@ -24,7 +59,7 @@ export default class App extends React.Component {
         console.log(res.data.result.list)
         this.setState({playlists: res.data.result.list})
         console.log('playlist montada',this.state.playlists)
-
+        console.log(res.data.result)
     } catch(err){
         alert(err.response)
     }
@@ -38,14 +73,27 @@ export default class App extends React.Component {
       console.log("res", res.data.result.tracks)
       this.setState({tracks: res.data.result.tracks})
       this.setState({playlistNameDetails:name})
-      console.log(this.state.tracks)
+      this.setState({playlistId: id})
     }catch(err){
       alert(err.response)
     }
   }
 
-  handlePlaylistName = (event) => {
-    this.setState({playlistName: event.target.value})
+  handlePlaylistName = (e) => {
+    this.setState({playlistName: e.target.value})
+  }
+
+  handleTrackName = (e) => {
+    this.setState({trackName: e.target.value})
+  }
+  handleTrackUrl = (e) => {
+    this.setState({trackUrl: e.target.value})
+  }
+  handleTrackId = (e) => {
+    this.setState({trackId: e.target.value})
+  }
+  handleTrackAutor = (e) => {
+    this.setState({trackAutor: e.target.value})
   }
 
   createPlaylist = async() => {
@@ -77,7 +125,27 @@ export default class App extends React.Component {
         }
     } else
         alert("Playlist não deletada")
-}
+  }
+
+  addTrackToPlayList = async (id) =>{
+    const url =`https://us-central1-labenu-apis.cloudfunctions.net/labefy/playlists/${id}/tracks`
+    const body= {
+      "name": this.state.trackName, 
+      "artist": this.state.trackAutor,
+      "url": this.state.trackUrl
+    }
+    console.log(id, "id")
+    try{
+      
+      const res = await axios.post(url, body, headers)
+      alert("Música inserida")
+      this.getPlaylistTracks(id, this.state.playlistName)
+
+    }catch(err){
+      console.log(err.response)
+      alert(err.response)
+    }
+  }
 
   componentDidMount(){
     this.getAllPlaylists()
@@ -86,37 +154,63 @@ export default class App extends React.Component {
   render(){
     const todasPlaylists = this.state.playlists.map((playlist)=>{
       return( 
-          <div>
-              <li key={playlist.id}>{playlist.name}
-              <button onClick ={()=> this.getPlaylistTracks(playlist.id, playlist.name)}>Detalhes</button>
-              <button onClick ={()=> this.deletePlaylist(playlist.id)}>Excluir</button></li>
-          </div>)
+        <Detalhes>
+              <Playlists key={playlist.id}>
+                {playlist.name}
+                <section>
+                  <button onClick ={()=> this.getPlaylistTracks(playlist.id, playlist.name)}>Detalhes</button>
+                  <button onClick ={()=> this.deletePlaylist(playlist.id)}>Excluir</button>
+                </section>
+              </Playlists>
+        </Detalhes>
+      )
+
     })
     const tracks = this.state.tracks.map((track)=>{
       return(
-        <div>
-          
-          <li key={track.id}>
-            {track.name}
-            <iframe title={track.name} src={track.url} width="100%" height="380" frameBorder="0" allowtransparency="true" allow="encrypted-media"></iframe>
-          </li>
-        </div>
+          <div key={track.id}>
+            {/* {track.name} */}
+            <Iframe title={track.name} src={track.url} width="100%" height="380" frameBorder="0" allowtransparency="true" allow="encrypted-media"></Iframe>
+          </div>
       )
     })
     return (
-      <div className="App">
-        <h1>Labefy</h1>
-        <input
-            placeholder="Playlist"
-            value={this.state.playlistName}
-            onChange={this.handlePlaylistName}
-        />
-        <button onClick ={()=> this.createPlaylist()}>Salvar</button>
-        <hr></hr>
-        {todasPlaylists}
-        <h2>{this.state.playlistNameDetails}</h2>
+      <Main>
+        <Titulo>Labefy</Titulo>
+        <div>
+          <input
+              placeholder="Playlist"
+              value={this.state.playlistName}
+              onChange={this.handlePlaylistName}
+          />
+          <button onClick ={()=> this.createPlaylist()}>Salvar</button>
+          <hr></hr>
+          {todasPlaylists}
+          {this.state.playlistNameDetails===""?"":<div>
+            <h1>{this.state.playlistNameDetails}</h1>
+            <input
+                placeholder="Nome da Música"
+                value={this.state.trackName}
+                onChange={this.handleTrackName}
+                
+            />
+            <input
+                placeholder="Autor"
+                value={this.state.trackAutor}
+                onChange={this.handleTrackAutor}
+                
+            />
+            <input
+                placeholder="Url"
+                value={this.state.trackUrl}
+                onChange={this.handleTrackUrl}
+                
+            />
+            <button onClick={()=>this.addTrackToPlayList(this.state.playlistId)}>Salvar</button>
+          </div>}
+        </div><br></br>
         {tracks}
-      </div>
+      </Main>
     );
   }
   
