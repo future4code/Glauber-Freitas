@@ -13,6 +13,8 @@ const Iframe = styled.iframe`
   
   height: 80px;
   width: 500px;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
 `
 const Detalhes = styled.div`
   display: flex;
@@ -30,6 +32,18 @@ const Playlists = styled.div`
 const Main = styled.div`
   text-align: center;
   background-color: #444;
+`
+const Musicas = styled.div`
+  display: flex;
+  justify-content: center;
+  align-itens: center
+`
+const Button = styled.button`
+border-top-right-radius: 20px;
+border-bottom-right-radius: 20px;
+color: white;
+background-color: black;
+border: none;
 `
 
 const headers = {
@@ -139,12 +153,29 @@ export default class App extends React.Component {
       
       const res = await axios.post(url, body, headers)
       alert("Música inserida")
-      this.getPlaylistTracks(id, this.state.playlistName)
+      console.log(this.state.playlistNameDetails, "playlist name")
+      this.getPlaylistTracks(id, this.state.playlistNameDetails)
+      
 
     }catch(err){
       console.log(err.response)
       alert(err.response)
     }
+  }
+
+  removeTrackFromPlaylits = async(trackId, playlistId) => {
+    const url = `https://us-central1-labenu-apis.cloudfunctions.net/labefy/playlists/${playlistId}/tracks/${trackId}`
+    const confirmaDelete = window.confirm("Deseja deletar a música?")
+    if(confirmaDelete)
+      try{
+        const res = await axios.delete(url, headers)
+        alert("Música deletada")
+        this.getPlaylistTracks(playlistId, this.state.playlistNameDetails)
+
+      }catch(err){
+        console.log(err.response)
+
+      }
   }
 
   componentDidMount(){
@@ -168,16 +199,18 @@ export default class App extends React.Component {
     })
     const tracks = this.state.tracks.map((track)=>{
       return(
-          <div key={track.id}>
+          <Musicas key={track.id}>
             {/* {track.name} */}
             <Iframe title={track.name} src={track.url} width="100%" height="380" frameBorder="0" allowtransparency="true" allow="encrypted-media"></Iframe>
-          </div>
+            <Button onClick={()=> this.removeTrackFromPlaylits(track.id, this.state.playlistId)}>Deletar</Button>
+          </Musicas>
       )
     })
     return (
       <Main>
         <Titulo>Labefy</Titulo>
         <div>
+          
           <input
               placeholder="Playlist"
               value={this.state.playlistName}
@@ -188,6 +221,7 @@ export default class App extends React.Component {
           {todasPlaylists}
           {this.state.playlistNameDetails===""?"":<div>
             <h1>{this.state.playlistNameDetails}</h1>
+            <h2>Adicionar Músicas</h2>
             <input
                 placeholder="Nome da Música"
                 value={this.state.trackName}
@@ -215,8 +249,3 @@ export default class App extends React.Component {
   }
   
 }
-
-// "https://open.spotify.com/track/56fiFTRrSiHHH3gBeaTg2P?si=817b77ae0a3e4b23",
-
-
-{/* <iframe src="https://open.spotify.com/embed/track/56fiFTRrSiHHH3gBeaTg2P" width="100%" height="380" frameBorder="0" allowtransparency="true" allow="encrypted-media"></iframe> */}
