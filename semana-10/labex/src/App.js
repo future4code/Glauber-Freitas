@@ -5,6 +5,7 @@ import HomePage from './pages/HomePage';
 
 import AdbIcon from '@material-ui/icons/Adb';
 import ListTripsPage from './pages/ListTripsPages';
+import AdminHomePage from './pages/AdminHomePage';
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
       </header>
       <HomePage/>
       <ListTripsPage/>
+      <AdminHomePage/>
     </div>
   );
 }
