@@ -4,6 +4,7 @@ import { IconButton } from '@material-ui/core';
 import HomePage from './pages/HomePage';
 
 import AdbIcon from '@material-ui/icons/Adb';
+import ListTripsPage from './pages/ListTripsPages';
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         </IconButton>
       </header>
       <HomePage/>
+      <ListTripsPage/>
     </div>
   );
 }
