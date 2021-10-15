@@ -1,6 +1,7 @@
 import React from 'react';
 import { useRequestData } from "../hooks/useRequestData";
 import styled from 'styled-components';
+import {useHistory} from "react-router-dom"
 
 const TripCard = styled.div`
     display: flex;
@@ -20,6 +21,10 @@ const Trips = styled.div`
 
 
 function AdminHomePage() {
+  const history = useHistory()
+    const goToHomePage = () => {
+        history.push("/")
+    }
     const [trips, isLoadingtrips, errorRequest] = useRequestData(
         "https://us-central1-labenu-apis.cloudfunctions.net/labeX/darvas/trips"
     );
@@ -27,6 +32,7 @@ function AdminHomePage() {
     return (
         <Trips>
     <h1>Lista de Viagens Admin</h1>
+    <button onClick={goToHomePage}>Inicial</button>
       {/* Caso de loading */}
     {isLoadingtrips && <h2>Carregando...</h2>}
       {/* Caso de mensagem de erro */}
