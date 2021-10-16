@@ -21,7 +21,7 @@ const Trips = styled.div`
 
 function ListTripsPage() {
     const [trips, isLoadingtrips, errorRequest] = useRequestData(
-        "https://us-central1-labenu-apis.cloudfunctions.net/labeX/darvas/trips"
+        "https://us-central1-labenu-apis.cloudfunctions.net/labeX/glauber-freitas-maryam/trips"
     );
     console.log(trips, "trips")
     return (

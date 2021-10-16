@@ -12,6 +12,7 @@ export const useRequestData = (url) => {
       .get(url)
       .then((res) => {
           console.log("Entrei", res.data)
+          console.log("url", url)
         setData(res.data);
         setIsLoading(false); // desativo a flag de loading em caso de sucesso
       })

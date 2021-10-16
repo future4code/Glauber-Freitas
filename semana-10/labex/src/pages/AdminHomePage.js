@@ -1,7 +1,8 @@
 import React from 'react';
 import { useRequestData } from "../hooks/useRequestData";
 import styled from 'styled-components';
-import {useHistory} from "react-router-dom"
+import {useHistory, useParams} from "react-router-dom"
+import axios from "axios";
 
 const TripCard = styled.div`
     display: flex;
@@ -22,11 +23,13 @@ const Trips = styled.div`
 
 function AdminHomePage() {
   const history = useHistory()
+  const params = useParams()
+  console.log("params", params)
     const goToHomePage = () => {
         history.push("/")
     }
     const [trips, isLoadingtrips, errorRequest] = useRequestData(
-        "https://us-central1-labenu-apis.cloudfunctions.net/labeX/darvas/trips"
+        "https://us-central1-labenu-apis.cloudfunctions.net/labeX/glauber-freitas-maryam/trips"
     );
     console.log(trips, "trips")
     return (
