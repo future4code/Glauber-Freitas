@@ -1,5 +1,5 @@
 import React from 'react';
-import { IconButton} from '@material-ui/core';
+import { Button } from '@material-ui/core';
 import { Router } from './route/Router';
 import styled from 'styled-components';
 
@@ -23,11 +23,10 @@ function App() {
 
     <AppContainer>
       <HeaderContainer>
-          <a href="/"><IconButton >Inicial</IconButton></a>
+          <a href="/"><Button variant={"outlined"} >Inicial</Button></a>
           <h1>LabeX</h1>
-          <IconButton>
-            <button variant="outlined">Login</button>
-          </IconButton>
+          <a href={"/login"}><Button variant={"outlined"}>Login</Button></a>
+          
       </HeaderContainer>
         <Router/>
     </AppContainer>

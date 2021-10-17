@@ -22,7 +22,7 @@ justify-content: space;
 function HomePage() {
     const history = useHistory()
     const goToListTrips = () => {
-        history.push("/login")
+        history.push("/viagens")
     }
     const goToAdminPage = () => {
         history.push("/login")
@@ -32,7 +32,7 @@ function HomePage() {
             <Typography variant = "h2">Principal</Typography> 
             <Buttons>
                 <Button variant={'outlined'} color={'primary'} onClick ={goToListTrips}>Lista de Viagens</Button>
-                <Button variant={'outlined'} color={'primary'} onClick={goToAdminPage}>Área Administrativa</Button>
+                {/* <Button variant={'outlined'} color={'primary'} onClick={goToAdminPage}>Área Administrativa</Button> */}
             </Buttons>
         </HomeContainer>
     );
