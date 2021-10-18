@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import CardTrips from './CardTrips';
 
 const DetailsContainer = styled.div`
     display: flex;
@@ -17,7 +18,7 @@ const Travellers = styled.div`
 const TripDetailsPage = () => {
     return (
         <DetailsContainer>
-            <Trip>Trips</Trip>
+            <CardTrips/>
             <Travellers>Travellers</Travellers>
         </DetailsContainer>
     )}

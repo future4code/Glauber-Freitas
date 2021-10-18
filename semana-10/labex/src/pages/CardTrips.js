@@ -6,6 +6,7 @@ import axios from "axios";
 
 const TripCard = styled.div`
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     border: 1px solid black;
@@ -21,7 +22,7 @@ const Trips = styled.div`
 `
 
 
-function AdminHomePage() {
+function CardTrips() {
   const history = useHistory()
   const params = useParams()
   console.log("params", params)
@@ -34,8 +35,8 @@ function AdminHomePage() {
     console.log(trips, "trips")
     return (
         <Trips>
-    <h1>Lista de Viagens Admin</h1>
-    <button onClick={goToHomePage}>Inicial</button>
+    <h1>Lista de Viagens</h1>
+    
       {/* Caso de loading */}
     {isLoadingtrips && <h2>Carregando...</h2>}
       {/* Caso de mensagem de erro */}
@@ -49,11 +50,11 @@ function AdminHomePage() {
         trips.trips.map((trip) => 
         
             <TripCard key={trip.id}>
-                <button>
-                {trip.name}<br></br>
-                
-                </button>
-                <button>X</button>
+                <p><strong>Nome:</strong>{trip.name}</p>
+                <p><strong>Planeta:</strong>{trip.planet}</p>
+                <p><strong>Data:</strong>{trip.date}</p>
+                <p><strong>Descrição:</strong>{trip.description}</p>
+                <p><strong>Duração em dias:</strong>{trip.durationInDays}</p>
             </TripCard>
         
         )}
@@ -61,4 +62,4 @@ function AdminHomePage() {
     );
 }
 
-export default AdminHomePage ;
+export default CardTrips ;

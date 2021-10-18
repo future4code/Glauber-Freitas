@@ -1,7 +1,7 @@
 import React from 'react';
 import HomePage from '../pages/HomePage';
 import ListTripsPage from '../pages/ListTripsPages';
-import AdminHomePage from '../pages/AdminHomePage';
+import CardTrips from '../pages/CardTrips';
 import CreateTripPage from '../pages/CreateTripPage';
 import LoginPage from '../pages/LoginPage'
 import TripDetailsPage from '../pages/TripDetailsPage';
@@ -36,9 +36,7 @@ export const Router =()=> {
           <Route exact path ={"/inscricao"}>
             <ApplicationFormPage/>
           </Route>
-          <Route exact path ={"/adminPage"}>
-            <AdminHomePage/>
-          </Route>
+          
           <Route exact path ={"/viagens/detalhe"}>
             <TripDetailsPage/>
           </Route>
