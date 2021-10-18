@@ -1,5 +1,4 @@
 import React from 'react';
-import { IconButton } from '@material-ui/core';
 import HomePage from '../pages/HomePage';
 import ListTripsPage from '../pages/ListTripsPages';
 import AdminHomePage from '../pages/AdminHomePage';
