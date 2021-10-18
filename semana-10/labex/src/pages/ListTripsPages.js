@@ -33,7 +33,7 @@ function ListTripsPage() {
     console.log(trips, "trips")
     return (
         <Trips>
-          <h1>Viagens</h1>
+          <h2>Viagens</h2>
           <Button variant={'contained'} onClick={goToCreateTripPage}>Criar Viagem</Button>
           {isLoadingtrips && <h2>Carregando...</h2>}
           {!isLoadingtrips && errorRequest && <p>{errorRequest.message}</p>}
@@ -44,12 +44,6 @@ function ListTripsPage() {
             trips.trips.map((trip) => 
             <a href={"/viagens/detalhe"}><TripCard key={trip.id}>
               <h3>{trip.name}</h3>
-              {/* Descrição: {trip.description}<br></br>
-              Planeta: {trip.planet}<br></br>
-              Duração: {trip.durationInDays}dias<br></br>
-              Data: {trip.date} */}
-              
-
             </TripCard>
             </a>
             )}

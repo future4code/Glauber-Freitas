@@ -1,5 +1,4 @@
 import React from 'react';
-import { Typography } from '@mui/material';
 import styled from 'styled-components';
 import { TextField , Button} from '@material-ui/core';
 
@@ -12,7 +11,7 @@ const LoginForm = styled.div`
 
 const LoginPage = () => {
     return <div>
-        <Typography variant = "h2">Login</Typography> 
+        <h2>Login</h2> 
         <LoginForm>
             <TextField label={"E-mail"} type={"email"}/>
             <TextField label={"Senha"} type={"password"}/>

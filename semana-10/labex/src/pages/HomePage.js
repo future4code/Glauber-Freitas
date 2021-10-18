@@ -1,6 +1,5 @@
 import React from 'react';
 import {useHistory} from "react-router-dom";
-import { Typography } from '@mui/material';
 import styled from 'styled-components';
 import { Button} from '@material-ui/core'
 
@@ -27,10 +26,15 @@ function HomePage() {
     const goToAdminPage = () => {
         history.push("/login")
     }
+    const goToApplicationFormPage = () => {
+        history.push("/inscricao")
+    }
     return ( 
         <HomeContainer>
-            <Typography variant = "h2">Principal</Typography> 
+            <h2>Principal</h2> 
             <Buttons>
+
+                <Button variant={'outlined'} color={'primary'} onClick ={goToApplicationFormPage}>Inscrição</Button>
                 <Button variant={'outlined'} color={'primary'} onClick ={goToListTrips}>Lista de Viagens</Button>
                 {/* <Button variant={'outlined'} color={'primary'} onClick={goToAdminPage}>Área Administrativa</Button> */}
             </Buttons>

@@ -19,7 +19,6 @@ const TripDetailsPage = () => {
         <DetailsContainer>
             <Trip>Trips</Trip>
             <Travellers>Travellers</Travellers>
-
         </DetailsContainer>
     )}
 
