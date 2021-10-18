@@ -23,7 +23,7 @@ function App() {
 
     <AppContainer>
       <HeaderContainer>
-          <a href="/"><Button variant={"outlined"} >Inicial</Button></a>
+          <a href="/"><Button variant={"outlined"} >Inicio</Button></a>
           <h1>LabeX</h1>
           <a href={"/login"}><Button variant={"outlined"}>Login</Button></a>
           

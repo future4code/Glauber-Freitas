@@ -34,8 +34,8 @@ function HomePage() {
             <h2>Principal</h2> 
             <Buttons>
 
-                <Button variant={'outlined'} color={'primary'} onClick ={goToApplicationFormPage}>Inscrição</Button>
-                <Button variant={'outlined'} color={'primary'} onClick ={goToListTrips}>Lista de Viagens</Button>
+                <Button variant={'outlined'} color={'inherit'} onClick ={goToApplicationFormPage}>Inscrição</Button>
+                {/* <Button variant={'outlined'} color={'primary'} onClick ={goToListTrips}>Lista de Viagens</Button> */}
                 {/* <Button variant={'outlined'} color={'primary'} onClick={goToAdminPage}>Área Administrativa</Button> */}
             </Buttons>
         </HomeContainer>

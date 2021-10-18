@@ -18,14 +18,13 @@ const CreateTripPage = () => {
             <h2>Criar Viagem</h2>
             <MuiPickersUtilsProvider utils={MomentUtils}>
             <CreateTripForm>
-                <TextField label={"Nome-mail"} type={"email"}/>
-                <TextField label={"Planeta"} type={"password"}/>
+                <TextField label={"Nome"}/>
+                <TextField label={"Planeta"}/>
                 <KeyboardDatePicker
                     label="Data"
                     variant="inline"
                     format="dd/MM/yyy"
                     disableToolbar
-                
                 />
                 <TextField label={"Descrição"} type={"password"}/>
                 <TextField label={"Duração em dias"} type={"number"}/>
