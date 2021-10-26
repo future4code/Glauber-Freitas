@@ -14,7 +14,7 @@ const Router = () => {
                 <Route exact path="/login">
                     <LoginPage />
                 </Route>
-                <Route exact path="/cadastrar">
+                <Route exact path="/cadastro">
                     <SignUpPage />
                 </Route>
                 <Route exact path="/">
@@ -31,7 +31,7 @@ const Router = () => {
                 </Route>
             </Switch>
         </BrowserRouter>
-     );
+    );
 }
- 
+
 export default Router;
