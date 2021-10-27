@@ -6,10 +6,12 @@ import PostDetailPage from "../pages/PostDetailPage/PostDetailPage";
 import PostsListPage from "../pages/PostsListPage/PostsListPage";
 import SignUpPage from "../pages/SignUpPage/SignUpPage";
 import AddPostsPage from "../pages/AddPostsPage/AddPostsPage"
+import Header from '../components/Header/Header';
 
 const Router = () => {
     return ( 
         <BrowserRouter>
+            <Header />
             <Switch>
                 <Route exact path="/login">
                     <LoginPage />
