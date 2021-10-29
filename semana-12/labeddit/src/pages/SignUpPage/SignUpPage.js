@@ -1,11 +1,15 @@
 import React from 'react';
 import { ScreenContainer } from '../LoginPage/style';
 import SignUpForm from './SignUpForm';
+import useUnprotectedPage from "../../hooks/useUnprotectedPage"
 
-const SignUpPage = () => {
+const SignUpPage = ({setLogButtonText}) => {
+    useUnprotectedPage()
     return ( 
         <ScreenContainer>
-            <SignUpForm/>
+            <SignUpForm
+                setLogButtonText={setLogButtonText}
+            />
         </ScreenContainer>
     );
 }

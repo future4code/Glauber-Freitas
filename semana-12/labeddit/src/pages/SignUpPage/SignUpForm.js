@@ -1,14 +1,19 @@
 import { Button, TextField } from '@material-ui/core';
 import React from 'react';
+import { useHistory } from 'react-router';
 import useForm from '../../hooks/useForm';
+import { signUp } from '../../services/user';
 import { InputsContainer } from '../LoginPage/style';
 
 
-const SignUpForm = () => {
+const SignUpForm = ({setLogButtonText}) => {
+    const history = useHistory()
     const [form, onChange, clear] = useForm({name:"", email:"", password:""})
 
     const onSubmitForm = (e) => {
         e.preventDefault()
+        signUp(form, clear, history, setLogButtonText)
+        console.log(form)
     }
     return (
         <InputsContainer>

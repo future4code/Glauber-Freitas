@@ -2,13 +2,19 @@ import { Button, TextField } from '@material-ui/core';
 import React from 'react';
 import { InputsContainer } from './style';
 import useForm from "../../hooks/useForm"
+import {login} from "../../services/user"
+import { useHistory } from 'react-router';
 
 
-const LoginForm = () => {
+const LoginForm = ({setLogButtonText}) => {
+    const history = useHistory()
     const [form, onChange, clear] = useForm({email:"", password:""})
+
     const onSubmitForm = (e) => {
         e.preventDefault()
+        login(form, clear, history, setLogButtonText)
     }
+
     return ( 
         <InputsContainer>
             <form onSubmit={onSubmitForm}>
@@ -26,10 +32,11 @@ const LoginForm = () => {
                     name={'password'}
                     value={form.password}
                     onChange={onChange}
-                    label={'Password'}
+                    label={'Senha'}
                     fullWidth
                     margin={'normal'}
-                    requiredtype={'password'}
+                    required
+                    type={'password'}
                 />
                 <Button
                     type={'submit'}
