@@ -1,10 +1,12 @@
 import React from 'react';
+import { ScreenContainer } from '../LoginPage/style';
+import SignUpForm from './SignUpForm';
 
 const SignUpPage = () => {
     return ( 
-        <div>
-            <h1>SignUpPage</h1>
-        </div>
+        <ScreenContainer>
+            <SignUpForm/>
+        </ScreenContainer>
     );
 }
 
