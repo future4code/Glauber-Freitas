@@ -10,7 +10,6 @@ export const login = (body, clear, history, setLogButtonText) => {
             clear()
             goToPostsListPage(history)
             setLogButtonText("Logout")
-            console.log(res)
         })
         .catch((err) => {
             alert(err.response.data.message)
