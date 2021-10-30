@@ -1,8 +1,10 @@
 import { CardActionArea, CardMedia, Typography } from '@material-ui/core';
-import React from 'react';
+import React, { useContext } from 'react';
+import MyContext from '../../contexts/myContext';
 import {CommentCardContainer,  CommentCardContent } from "./styled"
 
 const CommentCard = (props) => {
+    
     return (
         <CommentCardContainer >
             {/* <CardActionArea> */}

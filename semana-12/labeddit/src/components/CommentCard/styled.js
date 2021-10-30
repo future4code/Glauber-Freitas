@@ -2,7 +2,7 @@ import { Card, CardContent } from "@material-ui/core";
 import styled from "styled-components";
 
 export const CommentCardContainer = styled(Card)`
-    width: 500px;
+    width: 300px;
     margin:10px;
 ` 
 
