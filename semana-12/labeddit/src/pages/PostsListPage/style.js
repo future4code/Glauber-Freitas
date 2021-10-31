@@ -12,3 +12,11 @@ export const LogoImage = styled.img`
     width: 70vw;
     max-width: 350px;
 `
+export const InputsContainer = styled.div`
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80vw;
+    max-width: 450px;
+    margin-bottom: 5vh;
+`

@@ -8,25 +8,25 @@ import {BASE_URL} from "../../constants/urls";
 import PostCard from '../../components/PostCard/PostCard';
 import { goToPostDetailPage } from '../../routes/coordinator';
 import MyContext from '../../contexts/myContext';
+import PostForm from './PostForm';
 
 const PostsListPage = () => {
-    const {userName, setUserName, bodyPost, setBodyPost} = useContext(MyContext)
+    const {setPost} = useContext(MyContext)
     useProtectedPage()
     const history = useHistory()
     const posts = useRequestData([], `${BASE_URL}/posts`)
     console.log("posts", posts)
     
-    const onClickPost = (id, userName, body) => {
+    const onClickPost = (id, post) => {
         goToPostDetailPage(history, id)
-        setUserName(userName)
-        setBodyPost(body)
+        setPost(post)
     }
 
     const postsList = posts.map((post) => {
         return(
             <PostCard key={post.id}
                 post={post}
-                onClick={() => onClickPost(post.id, post.username, post.body)}
+                onClick={() => onClickPost(post.id, post)}
             />
         )
     })
@@ -34,6 +34,7 @@ const PostsListPage = () => {
     return ( 
         <ScreenContainer>
             <LogoImage src={logo2}/>
+            <PostForm/>
             {postsList}
         </ScreenContainer>
     );

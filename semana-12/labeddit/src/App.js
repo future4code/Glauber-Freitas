@@ -7,14 +7,13 @@ import Router from "./routes/Router"
 import MyContext from './contexts/myContext'
 
 const App = () => {
-    const [userName, setUserName] = useState('')
-    const [bodyPost, setBodyPost] = useState('')
+    const [post, setPost] = useState('')
 
     const token = localStorage.getItem("token")
     const [logButtonText, setLogButtonText] = useState(token ? "Logout": "Login")
     return (
         <ThemeProvider theme={theme} >
-            <MyContext.Provider value={{userName, setUserName, bodyPost, setBodyPost}}>
+            <MyContext.Provider value={{post, setPost}}>
                 <BrowserRouter>
                     <Header 
                         logButtonText={logButtonText}

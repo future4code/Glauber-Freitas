@@ -11,4 +11,22 @@ export const CommentCardContent = styled(CardContent)`
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    padding: 10px;
+`
+export const CardHr = styled.hr`
+    width: 280px;
+    align: center;
+`
+
+export const FooterCardContainer = styled.div`
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 0px;
+`
+
+export const LikeCardContainer = styled.div`
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
 `

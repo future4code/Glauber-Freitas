@@ -12,6 +12,14 @@ export const PostCardContainer = styled(Card)`
     width: 300px;
     margin:10px;
 ` 
+export const InputsContainer = styled.div`
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80vw;
+    max-width: 450px;
+    margin-bottom: 5vh;
+`
 
 export const PostCardContent = styled(CardContent)`
     display: flex;

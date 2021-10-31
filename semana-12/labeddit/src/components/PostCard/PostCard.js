@@ -1,38 +1,28 @@
-import { CardActionArea, CardMedia, Typography, IconButton, Button } from '@material-ui/core';
+import { Typography, IconButton, Button } from '@material-ui/core';
 import React from 'react';
-import {CardHr, PostCardContainer,  PostCardContent ,FooterCardContainer} from "./styled"
+import {CardHr, PostCardContainer,  PostCardContent ,FooterCardContainer, LikeCardContainer} from "./styled"
 import ArrowUpwardIcon from '@material-ui/icons/ArrowUpward';
 import ArrowDownwardIcon from '@material-ui/icons/ArrowDownward';
-// import ArrowCircleDownSharpIcon from '@mui/icons-material/ArrowCircleDownSharp';
 import InsertCommentSharpIcon from '@material-ui/icons/InsertCommentSharp';
-// import { Button } from '@mui/material';
 
 const PostCard = (props) => {
     return (
         <PostCardContainer >
-            <CardActionArea onClick={props.onClick}>
-            
-                <PostCardContent >
-                    
-                        <Typography align={"center"} variant={"h6"}>
-                            {props.post.title}
-                        </Typography>
-                        <Typography align={"center"} variant={"h5"}>
-                            {props.post.username}
-                        </Typography>
-                        <CardHr />
-                        <Typography align={"center"} >
-                            {props.post.body}
-                        </Typography>
-                        <CardHr />
-                        
-                    
-                    
-                   
-                </PostCardContent>
-                
-                </CardActionArea>
-                <FooterCardContainer>
+            <PostCardContent >
+                <Typography align={"center"} variant={"h5"}>
+                    {props.post.title}
+                </Typography>
+                <Typography align={"center"} variant={"h6"}>
+                    {props.post.username}
+                </Typography>
+                <CardHr />
+                <Typography align={"center"} >
+                    {props.post.body}
+                </Typography>
+                <CardHr />
+            </PostCardContent>
+            <FooterCardContainer>
+                <LikeCardContainer>
                     <IconButton>
                         <ArrowUpwardIcon/>
                     </IconButton>
@@ -40,10 +30,11 @@ const PostCard = (props) => {
                     <IconButton>
                         <ArrowDownwardIcon />
                     </IconButton>
-                    <Button variant="outlined" startIcon={<InsertCommentSharpIcon />}>
-        {props.post.commentCount} Comentarios
-      </Button>
-                    </FooterCardContainer>
+                </LikeCardContainer>
+                <Button onClick={props.onClick} variant="outlined" startIcon={<InsertCommentSharpIcon />}>
+                    {props.post.commentCount} Comentarios
+                </Button>
+            </FooterCardContainer>
         </PostCardContainer>
     );
 }
