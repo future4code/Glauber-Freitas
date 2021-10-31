@@ -4,7 +4,7 @@ import useForm from "../../hooks/useForm"
 import { InputsContainer } from './styled';
 
 const PostDetailForm = () => {
-    const[form, onChange, clear] = useForm()
+    const[form, onChange, clear] = useForm({comment:""})
     const onSubmitForm = (e) => {
         e.preventDefault()
         // login(form, clear, history, setLogButtonText)
@@ -13,14 +13,22 @@ const PostDetailForm = () => {
         <div>
             <InputsContainer>
                 <form onSubmit={onSubmitForm}>
-                    <TextField />
+                    <TextField 
+                        name={"comment"}
+                        placeholder={"Escreva seu Comentario"}
+                        value={form.comment}
+                        onChange={onChange}
+                        fullWidth
+                        margin={'normal'}
+                        type={'text'}
+                    />
                     <Button
                         type={'submit'}
                         fullWidth
                         variant={'contained'}
                         color={'primary'}
                     >
-                        PostarComentario
+                        Postar Comentario
                     </Button>
                 </form>
             </InputsContainer>

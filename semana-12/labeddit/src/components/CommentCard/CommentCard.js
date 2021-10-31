@@ -26,7 +26,7 @@ const CommentCard = (props) => {
                     <IconButton>
                         <ArrowUpwardIcon/>
                     </IconButton>
-                    <p>{props.comment.voteSum}</p>
+                    <p>{(props.comment.voteSum===null)?0:props.comment.voteSum}</p>
                     <IconButton>
                         <ArrowDownwardIcon />
                     </IconButton>

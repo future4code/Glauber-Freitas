@@ -4,7 +4,7 @@ import useForm from "../../hooks/useForm"
 import { InputsContainer } from './style';
 
 const PostForm = () => {
-    const[form, onChange, clear] = useForm()
+    const[form, onChange, clear] = useForm({title:"", post:""})
     const onSubmitForm = (e) => {
         e.preventDefault()
         // login(form, clear, history, setLogButtonText)
@@ -13,8 +13,24 @@ const PostForm = () => {
         <div>
             <InputsContainer>
                 <form onSubmit={onSubmitForm}>
-                    <TextField />
-                    <TextField />
+                    <TextField 
+                        name={"title"}
+                        placeholder={"Título do post"}
+                        value={form.title}
+                        onChange={onChange}
+                        fullWidth
+                        margin={'normal'}
+                        type={'text'}
+                    />
+                    <TextField 
+                        name={"post"}
+                        placeholder={"Escreva seu Post"}
+                        value={form.post}
+                        onChange={onChange}
+                        fullWidth
+                        margin={'normal'}
+                        type={'text'}
+                    />
                     <Button
                         type={'submit'}
                         fullWidth

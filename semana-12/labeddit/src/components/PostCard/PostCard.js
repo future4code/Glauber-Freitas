@@ -32,7 +32,7 @@ const PostCard = (props) => {
                     </IconButton>
                 </LikeCardContainer>
                 <Button onClick={props.onClick} variant="outlined" startIcon={<InsertCommentSharpIcon />}>
-                    {props.post.commentCount} Comentarios
+                    {(props.post.commentCount===null)?"Nenhum":props.post.commentCount} {(props.post.commentCount===null || props.post.commentCount==="1")?"Comentario":"Comentarios "}
                 </Button>
             </FooterCardContainer>
         </PostCardContainer>
