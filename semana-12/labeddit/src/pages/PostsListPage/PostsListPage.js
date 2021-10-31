@@ -14,7 +14,7 @@ const PostsListPage = () => {
     const {setPost} = useContext(MyContext)
     useProtectedPage()
     const history = useHistory()
-    const posts = useRequestData([], `${BASE_URL}/posts?page=1&size=20`)
+    const [posts, getPosts] = useRequestData([], `${BASE_URL}/posts?page=1&size=20`)
     console.log("posts", posts)
     
     const onClickPost = (id, post) => {
@@ -34,7 +34,9 @@ const PostsListPage = () => {
     return ( 
         <ScreenContainer>
             <LogoImage src={logo2}/>
-            <PostForm/>
+            <PostForm
+                getPosts={getPosts}
+            />
             {postsList}
         </ScreenContainer>
     );

@@ -4,21 +4,28 @@ import { useEffect } from "react";
 
 const useRequestData = (initialData, url) => {
     const [data, setData] = useState(initialData)
-    useEffect(() => {
+    
+    const header = {
+        headers:{
+            Authorization: localStorage.getItem("token")
+        }
+    }
+
+    useEffect(() =>{
+        getPost()
+    },[url])
+    
+    const getPost = () => {
         axios
-            .get(url, {
-                headers:{
-                    Authorization: localStorage.getItem("token")
-                }
-            })
+            .get(url, header)
             .then((res) => {
-                console.log("data",res.data)
                 setData(res.data)
             })
             .catch((err) => {
-                console.log("ocorreu um erro, tente novamente", err)
+                console.log(err)
+                alert("ocorreu um erro, tente novamente")
             })
-    }, [url])
-    return (data);
+    }
+    return [data, getPost];
 }
 export default useRequestData;

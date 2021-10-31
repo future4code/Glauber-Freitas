@@ -4,8 +4,19 @@ import {CardHr, PostCardContainer,  PostCardContent ,FooterCardContainer, LikeCa
 import ArrowUpwardIcon from '@material-ui/icons/ArrowUpward';
 import ArrowDownwardIcon from '@material-ui/icons/ArrowDownward';
 import InsertCommentSharpIcon from '@material-ui/icons/InsertCommentSharp';
+import {postVote} from '../../services/post'
 
 const PostCard = (props) => {
+    const handleDownVote = () => {
+        const body = {direction:-1}
+        console.log("body", body)
+        postVote(props.post.id, body)
+    }
+    const handleUpVote = () => {
+        const body = {direction:1}
+        console.log("body", body)
+        postVote(props.post.id, body)
+    }
     return (
         <PostCardContainer >
             <PostCardContent >
@@ -23,13 +34,13 @@ const PostCard = (props) => {
             </PostCardContent>
             <FooterCardContainer>
                 <LikeCardContainer>
-                    <IconButton>
+                    <IconButton onClick={handleUpVote}>
                         <ArrowUpwardIcon/>
                     </IconButton>
-                    <p>{props.post.voteSum}</p>
-                    <IconButton>
+                    <p>{(props.post.voteSum===null)? 0 : props.post.voteSum}</p>
+                    <IconButton onClick={handleDownVote}>
                         <ArrowDownwardIcon />
-                    </IconButton>
+                    </IconButton >
                 </LikeCardContainer>
                 <Button onClick={props.onClick} variant="outlined" startIcon={<InsertCommentSharpIcon />}>
                     {(props.post.commentCount===null)?"Nenhum":props.post.commentCount} {(props.post.commentCount===null || props.post.commentCount==="1")?"Comentario":"Comentarios "}

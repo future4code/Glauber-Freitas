@@ -5,9 +5,21 @@ import {CommentCardContainer,  CommentCardContent,FooterCardContainer , LikeCard
 import ArrowUpwardIcon from '@material-ui/icons/ArrowUpward';
 import ArrowDownwardIcon from '@material-ui/icons/ArrowDownward';
 import InsertCommentSharpIcon from '@material-ui/icons/InsertCommentSharp';
+import {commentVote} from '../../services/post' 
 
 const CommentCard = (props) => {
     console.log("comentario", props.comment)
+    
+    const handleDownVote = () => {
+        const body = {direction:-1}
+        console.log("body", body)
+        commentVote(props.comment.id, body)
+    }
+    const handleUpVote = () => {
+        const body = {direction:1}
+        console.log("body", body)
+        commentVote(props.comment.id, body)
+    }
     return (
         <CommentCardContainer >
             {/* <CardActionArea> */}
@@ -23,11 +35,11 @@ const CommentCard = (props) => {
                 <CardHr/>
                 <FooterCardContainer>
                 <LikeCardContainer>
-                    <IconButton>
+                    <IconButton onClick={handleUpVote}>
                         <ArrowUpwardIcon/>
                     </IconButton>
                     <p>{(props.comment.voteSum===null)?0:props.comment.voteSum}</p>
-                    <IconButton>
+                    <IconButton onClick={handleDownVote}>
                         <ArrowDownwardIcon />
                     </IconButton>
                 </LikeCardContainer>

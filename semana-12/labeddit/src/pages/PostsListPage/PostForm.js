@@ -4,13 +4,14 @@ import useForm from "../../hooks/useForm"
 import { InputsContainer } from './style';
 import {addPost} from "../../services/post"
 
-const PostForm = () => {
+const PostForm = (props) => {
     const[form, onChange, clear] = useForm({title:"", body:""})
     const onSubmitForm = (e) => {
         e.preventDefault()
         console.log("Post", form)
         // login(form, clear, history, setLogButtonText)
         addPost(form, clear)
+        props.getPosts()
     }
     return (
         <div>

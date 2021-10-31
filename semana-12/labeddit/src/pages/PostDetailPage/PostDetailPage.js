@@ -15,7 +15,7 @@ const PostDetailPage = () => {
     useProtectedPage()
     const [postDetails, setPostDetails] = useState()
     const params = useParams()
-    const postComments = useRequestData([], `${BASE_URL}/posts/${params.id}/comments`)
+    const [postComments, getPostComents] = useRequestData([], `${BASE_URL}/posts/${params.id}/comments`)
     console.log("comentarios",postComments)
     const comments = postComments.map((comment) => {
         return (
@@ -32,6 +32,7 @@ const PostDetailPage = () => {
                 post={post}
             />
             <PostDetailForm
+                getPostComents={getPostComents}
                 post={post}
             />
             {comments}

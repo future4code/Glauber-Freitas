@@ -12,8 +12,8 @@ const PostDetailForm = (props) => {
         e.preventDefault()
         console.log("Form", form)
         console.log("props", props.post)
-        // login(form, clear, history, setLogButtonText)
         addComment(props.post.id, form, clear)
+        props.getPostComents()
         
     }
     return (
