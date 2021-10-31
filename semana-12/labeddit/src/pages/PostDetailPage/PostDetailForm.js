@@ -1,18 +1,15 @@
-import { TextField, Button} from '@material-ui/core';
-import React from 'react';
+import { TextField, Button, CircularProgress} from '@material-ui/core';
+import React, { useState } from 'react';
 import useForm from "../../hooks/useForm"
 import { InputsContainer } from './styled';
 import {addComment} from '../../services/post'
-import useRequestData from '../../hooks/useRequestData';
-import {BASE_URL} from "../../constants/urls"
 
 const PostDetailForm = (props) => {
+    const [isLoading, setIsLoading] = useState(false)
     const[form, onChange, clear] = useForm({body:""})
     const onSubmitForm = (e) => {
         e.preventDefault()
-        console.log("Form", form)
-        console.log("props", props.post)
-        addComment(props.post.id, form, clear)
+        addComment(props.post.id, form, clear, setIsLoading)
         props.getPostComents()
         
     }
@@ -36,7 +33,7 @@ const PostDetailForm = (props) => {
                         color={'primary'}
                         onClick={onSubmitForm}
                     >
-                        Postar Comentario
+                        {isLoading ? <CircularProgress color={"inherit"} size={24} />: <>Postar comentario</>}
                     </Button>
                 </form>
             </InputsContainer>

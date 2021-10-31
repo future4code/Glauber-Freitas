@@ -1,5 +1,5 @@
-import { Button, TextField } from '@material-ui/core';
-import React from 'react';
+import { Button, TextField, CircularProgress } from '@material-ui/core';
+import React, { useState } from 'react';
 import { useHistory } from 'react-router';
 import useForm from '../../hooks/useForm';
 import { signUp } from '../../services/user';
@@ -9,11 +9,11 @@ import { InputsContainer } from '../LoginPage/style';
 const SignUpForm = ({setLogButtonText}) => {
     const history = useHistory()
     const [form, onChange, clear] = useForm({name:"", email:"", password:""})
+    const [isLoading, setIsLoading] = useState(false)
 
     const onSubmitForm = (e) => {
         e.preventDefault()
-        signUp(form, clear, history, setLogButtonText)
-        console.log(form)
+        signUp(form, clear, history, setLogButtonText, setIsLoading)
     }
     return (
         <InputsContainer>
@@ -54,7 +54,7 @@ const SignUpForm = ({setLogButtonText}) => {
                     variant={'contained'}
                     color={'primary'}
                 >
-                    Cadastrar
+                    {isLoading ? <CircularProgress color={"inherit"} size={24} />: <>Cadastrar</>}
                 </Button>
             </form>
         </InputsContainer>

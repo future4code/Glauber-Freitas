@@ -9,12 +9,10 @@ import {postVote} from '../../services/post'
 const PostCard = (props) => {
     const handleDownVote = () => {
         const body = {direction:-1}
-        console.log("body", body)
         postVote(props.post.id, body)
     }
     const handleUpVote = () => {
         const body = {direction:1}
-        console.log("body", body)
         postVote(props.post.id, body)
     }
     return (

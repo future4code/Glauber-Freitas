@@ -8,31 +8,36 @@ const header = {
     }
 }
 
-export const addPost = (body, clear) => {
+export const addPost = (body, clear, setIsLoading) => {
+    setIsLoading(true)
     axios
         .post(`${BASE_URL}/posts`, body, header)
         .then((res) => {
-            console.log("inserção", res)
             alert(res.data)
             clear()
+            setIsLoading(false)
             
         })
         .catch((err) => {
             console.log("erro", err)
             alert(err.data)
+            setIsLoading(false)
         })
 }
 
-export const addComment = (id, body, clear) => {
+export const addComment = (id, body, clear, setIsLoading) => {
+    setIsLoading(true)
     axios
         .post(`${BASE_URL}/posts/${id}/comments`, body, header)
         .then((res) => {
             alert(res.data)
             clear()
+            setIsLoading(false)
         })
         .catch((err) => {
             console.log("erro", err)
             alert(err.data)
+            setIsLoading(false)
         })
 }
 

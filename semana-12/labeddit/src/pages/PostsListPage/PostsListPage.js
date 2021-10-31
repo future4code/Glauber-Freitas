@@ -9,13 +9,13 @@ import PostCard from '../../components/PostCard/PostCard';
 import { goToPostDetailPage } from '../../routes/coordinator';
 import MyContext from '../../contexts/myContext';
 import PostForm from './PostForm';
+import Loading from '../../components/Loading/Loading';
 
 const PostsListPage = () => {
-    const {setPost} = useContext(MyContext)
     useProtectedPage()
+    const {setPost} = useContext(MyContext)
     const history = useHistory()
     const [posts, getPosts] = useRequestData([], `${BASE_URL}/posts?page=1&size=20`)
-    console.log("posts", posts)
     
     const onClickPost = (id, post) => {
         goToPostDetailPage(history, id)
@@ -37,7 +37,7 @@ const PostsListPage = () => {
             <PostForm
                 getPosts={getPosts}
             />
-            {postsList}
+            {postsList.length>0?postsList:<Loading/>}
         </ScreenContainer>
     );
 }

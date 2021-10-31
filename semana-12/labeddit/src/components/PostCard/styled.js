@@ -2,7 +2,7 @@ import { Card, CardContent } from "@material-ui/core";
 import styled from "styled-components";
 
 export const PostCardContainer = styled(Card)`
-    width: 400px;
+    width: 350px;
     margin:10px;
     padding: 5px;
 ` 
@@ -12,10 +12,10 @@ export const PostCardContent = styled(CardContent)`
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
-    padding: 10px
+    padding: 5px
 `
 export const CardHr = styled.hr`
-    width: 380px;
+    width: 340px;
     align: center;
 `
 

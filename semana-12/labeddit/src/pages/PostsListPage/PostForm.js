@@ -1,16 +1,15 @@
-import { TextField, Button} from '@material-ui/core';
-import React from 'react';
+import { TextField, Button, CircularProgress} from '@material-ui/core';
+import React, { useState } from 'react';
 import useForm from "../../hooks/useForm"
 import { InputsContainer } from './style';
 import {addPost} from "../../services/post"
 
 const PostForm = (props) => {
+    const [isLoading, setIsLoading] = useState(false)
     const[form, onChange, clear] = useForm({title:"", body:""})
     const onSubmitForm = (e) => {
         e.preventDefault()
-        console.log("Post", form)
-        // login(form, clear, history, setLogButtonText)
-        addPost(form, clear)
+        addPost(form, clear, setIsLoading)
         props.getPosts()
     }
     return (
@@ -42,7 +41,7 @@ const PostForm = (props) => {
                         color={'primary'}
                         onClick={onSubmitForm}
                     >
-                        Criar Post
+                        {isLoading ? <CircularProgress color={"inherit"} size={24} />: <>Criar Post</>}
                     </Button>
                 </form>
             </InputsContainer>

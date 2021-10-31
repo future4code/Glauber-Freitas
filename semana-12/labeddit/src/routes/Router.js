@@ -5,7 +5,6 @@ import LoginPage from "../pages/LoginPage/LoginPage";
 import PostDetailPage from "../pages/PostDetailPage/PostDetailPage";
 import PostsListPage from "../pages/PostsListPage/PostsListPage";
 import SignUpPage from "../pages/SignUpPage/SignUpPage";
-import AddPostsPage from "../pages/AddPostsPage/AddPostsPage"
 
 const Router = ({setLogButtonText}) => {
     return ( 
@@ -25,9 +24,6 @@ const Router = ({setLogButtonText}) => {
             </Route>
             <Route exact path="/detalhe/:id">
                 <PostDetailPage />
-            </Route>
-            <Route exact path="/adicionar-post">
-                <AddPostsPage />
             </Route>
             <Route>
                 <ErrorPage />
