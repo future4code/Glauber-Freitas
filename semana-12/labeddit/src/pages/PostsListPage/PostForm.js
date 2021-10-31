@@ -2,12 +2,15 @@ import { TextField, Button} from '@material-ui/core';
 import React from 'react';
 import useForm from "../../hooks/useForm"
 import { InputsContainer } from './style';
+import {addPost} from "../../services/post"
 
 const PostForm = () => {
-    const[form, onChange, clear] = useForm({title:"", post:""})
+    const[form, onChange, clear] = useForm({title:"", body:""})
     const onSubmitForm = (e) => {
         e.preventDefault()
+        console.log("Post", form)
         // login(form, clear, history, setLogButtonText)
+        addPost(form, clear)
     }
     return (
         <div>
@@ -23,9 +26,9 @@ const PostForm = () => {
                         type={'text'}
                     />
                     <TextField 
-                        name={"post"}
+                        name={"body"}
                         placeholder={"Escreva seu Post"}
-                        value={form.post}
+                        value={form.body}
                         onChange={onChange}
                         fullWidth
                         margin={'normal'}
@@ -36,6 +39,7 @@ const PostForm = () => {
                         fullWidth
                         variant={'contained'}
                         color={'primary'}
+                        onClick={onSubmitForm}
                     >
                         Criar Post
                     </Button>

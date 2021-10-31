@@ -31,7 +31,9 @@ const PostDetailPage = () => {
             <PostCard 
                 post={post}
             />
-            <PostDetailForm/>
+            <PostDetailForm
+                post={post}
+            />
             {comments}
         </ScreenContainer>
     );
