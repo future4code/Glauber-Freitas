@@ -15,3 +15,9 @@ export const PostCardContent = styled(CardContent)`
 export const CardHr = styled.hr`
     width: 280px;
 `
+
+export const FooterCardContainer = styled.div`
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+`

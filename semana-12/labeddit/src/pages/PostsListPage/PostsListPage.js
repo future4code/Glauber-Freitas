@@ -25,8 +25,7 @@ const PostsListPage = () => {
     const postsList = posts.map((post) => {
         return(
             <PostCard key={post.id}
-                userName={post.username}
-                body={post.body}
+                post={post}
                 onClick={() => onClickPost(post.id, post.username, post.body)}
             />
         )
