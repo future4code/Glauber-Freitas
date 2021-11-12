@@ -9,10 +9,11 @@ const CardTarot = (props) => {
         <CardContainer>
             <CardActionArea>
                 <CardMedia
+                    onClick={()=>props.onClickCard()}
                     back={props.back}
                     component={'img'}
                     alt ={props.name}
-                    image={props.image}
+                    image={props.inicio?(props.clicked===props.name?props.image:props.back):props.image}
                 >
                 </CardMedia>
             </CardActionArea>
