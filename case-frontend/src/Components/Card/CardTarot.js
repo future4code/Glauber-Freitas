@@ -14,6 +14,7 @@ const CardTarot = (props) => {
                     component={'img'}
                     alt ={props.name}
                     image={props.inicio?(props.clicked===props.name?props.image:props.back):props.image}
+                    descrription={props.description}
                 >
                 </CardMedia>
             </CardActionArea>
