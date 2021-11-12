@@ -22,6 +22,7 @@ export const Header = styled.div`
     left:0;
     background-color: white;
     width: 100vw;
+    padding-top: 20px;
     display: flex;
     flex-direction: column;
     z-index: 1;
