@@ -7,7 +7,7 @@ import { AppContainer, CardContainer, Header } from "./styled"
 
 const App = () => {
   const [cardName, setCardName] =useState()
-  const [inicio, setInicio] = useState(true)
+  const [inicio, setInicio] = useState(false)
   const [description, setDescription] = useState()
   const cardsList = cards.cards
   const baseUrlCard = cards.imagesUrl
@@ -19,9 +19,9 @@ const App = () => {
   }
 
   const onClickIniciar = () => {
-    // setInicio(true)
-    // setCardName('')
-    // setDescription('')
+    setInicio(true)
+    setCardName('')
+    setDescription('')
     // shuffle(cardsList)
   }
 
@@ -44,13 +44,14 @@ const App = () => {
     <AppContainer >
       <Header>
         <div>
-        <Button
-          onClick={onClickIniciar}
-          variant="contained"
-        >
-          Iniciar
-        </Button>
+          <Button
+            onClick={onClickIniciar}
+            variant="contained"
+          >
+            Iniciar
+          </Button>
         </div>
+        {cardName}<br></br>
         {description}
       </Header>
       <CardContainer>
