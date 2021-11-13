@@ -2,7 +2,7 @@ import { Button } from "@material-ui/core"
 import { useState } from "react"
 import CardTarot from "./Components/Card/CardTarot"
 import cards from "./Data/Cards.json"
-import { AppContainer, CardContainer, Header } from "./styled"
+import { AppContainer, ButtonContainer, CardContainer, Header } from "./styled"
 
 
 const App = () => {
@@ -51,14 +51,14 @@ const App = () => {
   return (
     <AppContainer >
       <Header>
-        <div>
+        <ButtonContainer>
           <Button
             onClick={onClickIniciar}
             variant="contained"
           >
             Iniciar
           </Button>
-        </div>
+        </ButtonContainer>
         {cardName}<br></br>
         {description}
       </Header>

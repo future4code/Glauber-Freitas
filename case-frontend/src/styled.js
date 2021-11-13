@@ -27,3 +27,7 @@ export const Header = styled.div`
     flex-direction: column;
     z-index: 1;
 `
+
+export const ButtonContainer = styled.div`
+    margin-bottom: 10px
+`
