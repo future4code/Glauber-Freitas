@@ -1,0 +1,396 @@
+{
+  "imagesUrl": "https://dkw5ssdvaqf8l.cloudfront.net/static/psr/br/framework/yii/images/content/pt-br/product/tarot/marselha/162x341/",
+  "imageBackCard": "https://dkw5ssdvaqf8l.cloudfront.net/static/psr/br/framework/yii/images/content/pt-br/product/tarot/marselha/back-blue-card.png",
+  "cards": [
+    {
+      "name": "O MAGO",
+      "image": "arcano1.jpg",
+      "description":"O Mago nas cartas de tarot indica que os instrumentos para desbravar o mundo foram adquiridos. Ou seja, os seus desejos em si foram materializados tornando-o capaz de agarrar as novas oportunidades. Comunicação é sua principal mensagem, portanto a tirá-la significa há capacidade para novos aprendizados."
+    },
+    {
+      "name": "A SACERDOTISA",
+      "image": "arcano2.jpg",
+      "description":"essa é uma das cartas de tarot mais importantes, porque representa sabedoria, intuição, fé e revelações. No entanto, ao mesmo tempo, há duas possíveis interpretações para ela. A primeira é positiva e indica preparo para lidar com as situações, portanto muito relevante.A segunda possibilidade não é lá tão boa assim. A Papisa também pose sinalizar dificuldades para expressar sentimentos. Isto é, a falta de afeto vem trazendo uma introspecção e isso pode prejudicar muito na autocompreensão."
+    },
+    {
+      "name": "A IMPERATRIZ",
+      "image": "arcano3.jpg",
+      "description":"A Imperatriz nas cartas de tarot carrega uma simbologia muito forte. A figura é de força e se origina na imagem de uma mãe completamente devota aos seus feitos. Isso significa que a sua vida está, acima de tudo, no pico das conquistas e se encontra pronta para ascender. O acúmulo de experiências foram o suficiente para a levar ao espelho de confiança que agora é. Certamente ao tirar a Imperatriz o momento é ideal para iniciar um novo ciclo e colocar em prática o conhecimento. Aliás, nunca esqueça que está a frente dos comandos e a força associada a sabedora a faz ser muito mais do que um sombra, mas uma protagonista da própria história."
+    },
+    {
+      "name": "O IMPERADOR",
+      "image": "arcano4.jpg",
+      "description":"A carta o Imperador do Tarot retrata perseverança e força. Essas características são perceptíveis na observação da figura que o representa, isto é, vemos a figura de um homem mais velho com um cetro na mão e um escudo de águia, sentado em um trono. Ele traz a altivez, firmeza, poder e proteção poderosa. O arcano imperador traz a energia da paternidade, obediência, regras e ordem representadas pela figura masculina. Ele é um guerreiro, governante absoluto e ditador das regras que devem ser seguidas por todos os demais."
+    },
+    {
+      "name": "O PAPA",
+      "image": "arcano5.jpg",
+      "description":"Falou em espiritualidade a carta O papa do tarot tem a resposta. A mensagem é de atenção para o lado espiritual. É hora de parar e lembrar que alguns minutos em diálogo com Deus pode ser a chave para resolver muitos problemas. Aproveite portanto para mirar alguns pedidos de mudança em sua vida. O tempo está propicio para o retorno ao seu interior. O momento de meditação é muito importante para organizar as ideias e os sentimentos. Uma aura renovada atrai coisas boas para os diversos âmbitos da vida. Aproveite para se ligar aos seus ancestrais, porque eles são a maior base para tomar decisões e adquirir sabedoria. Tudo pode ser conquistado desde que se dedique para isso e esteja sempre interligado. O papa representa também boas vibrações e inspirações para o fortalecimento do espírito. Alcançando isso saiba que as qualidades a vir com esta carta são: competência, sabedoria e elevação espiritual."
+    },
+    {
+      "name": "OS ENAMORADOS",
+      "image": "arcano6.jpg",
+      "description":"Aos que tiram a carta de tarot “Enamorados” a melhor descrição para defini-lo é: delicadeza, afeição e beleza. Mas, também quer dizer: insegurança e indecisão. A dúvida e a ansiedade podem estar deixando-o oscilar muito nas decisões. Mudar constantemente de ideias não é aconselhável. Tente se manter mais lúcido, pois a vida não é somente uma “história de amor”."
+    },
+    {
+      "name": "O CARRO",
+      "image": "arcano7.jpg",
+      "description":"O que esperar de um homem montado em uma carruagem puxada por dois cavalos? É bem fácil de compreender, pois o movimento gerado pela figura representa um novo caminho a ser trilhado. Mas, como todo bom cavaleiro, a carruagem precisa ser governada. O olhar para o mesmo lado é um ponto positivo, pois determinar a direção e continuar caminhando vai gerar revelações necessárias para a vida. Outro ponto importante passado pelo O Carro é que as mudanças urgentes estão para acontecer. É preciso coragem para enfrentá-las, pois por trás dos desafios estão o seu maior sonho. A a possibilidade de uma inversão da carta e isso resulta sobretudo em atrasos. Você vai sim alcançar seus objetivos, mas com um tempo a mais previsto."
+    },
+    {
+      "name": "A JUSTIÇA",
+      "image": "arcano8.jpg",
+      "description":"Quando falamos em justiça logo nos vem a imagem de uma balança, pois o bem e o mal são seus maiores pesos. Mas, o que a mensagem dessa carta nos diz é que devemos ter equilíbrio. Portanto o julgamento a base das aparências e das primeiras impressões não valem para sua analogia. Os instrumentos para sua atuação é a ética e a justiça universal. O caminho da luz e da escuridão sempre estarão presentes em nossas vidas e é a partir deste centro, dessa balança que devemos enfrentá-los. A melhor bússola para tomar as decisões é o coração, pois nele habita todas as repostas."
+    },
+    {
+      "name": "O EREMITA",
+      "image": "arcano9.jpg",
+      "description":"Dentre todas as cartas do tarot saiba que O Eremita é sinal de busca. O silêncio será e a reclusão serão pedidas durante este processo, porque com o ato virá a sabedoria e a concentração. Juntos e refletidos tomar decisões ficará muito mais fácil e claro. Aproveite, afinal, para fazer uma viagem em si mesmo e se dedicar ao autoconhecimento. Retiros espirituais e meditações são bem vindas neste tempo. A singularidade do caminho depende da luz interna acesa e forte para iluminar o caminho e fortalecer os alicerces da realização dos seus sonhos."
+    },
+    {
+      "name": "A RODA DA FORTUNA",
+      "image": "arcano10.jpg",
+      "description":"Quando pensar em analisar essa carta é preciso ficar atendo nos efeito da roda. Ela literalmente tem altos e baixos e é essa a analogia trazida para a vida. A figura representa a vida e isso inclui a amorosa e a profissional. Portanto há momentos bons e ruins a serem enfrentados. O movimento é o seu principal foco, porque estamos em constantes mudanças."
+    },
+    {
+      "name": "A FORÇA",
+      "image": "arcano11.jpg",
+      "description":"Talvez seja essa uma das cartas do tarot mais desejadas pelos consultores do baralho. A Força simboliza domínio emocional. É partir dessa qualidade que a superação e a vontade de agir se tornam reais na vida. O ponto forte para superar as barreiras é o amor próprio e é isso que a mulher abrindo a boca com as duas mãos representa. O animal da imagem traz a analogia do instinto animal. A forma com que ela o doma é sinal de que este impulso está sendo dominado por um sentimento mais racional. Para isso a soma de várias tipos de potência foram usadas, sinal que houve uma expansão dos seus domínios."
+    },
+    {
+      "name": "O HOMEM PENDURADO",
+      "image": "arcano12.jpg",
+      "description":"A princípio, o Enforcado é uma das cartas do tarot que mais causam medo. A imagem em si é assustadora e representa o estar perto da morte. Mas, se parar para observar bem, em todas as cartas a feição do Enforcado é tranquila e serena. Essa analogia é sinal de esperança, porque não há nada que o prende a esta situação. Não há nenhum tipo de instrumento que esteja o obrigando a estar nessa situação. Mesmo se a causa de ter chegado a essa situação foi imposta, a possibilidade de sair dela é muito grande. Basta tomar a decisão."
+    },
+    {
+      "name": "A MORTE",
+      "image": "arcano13.jpg",
+      "description":"Muita calma nessa hora! Apesar de medonha essa é uma das cartas do tarot que mais indicam positividade. Renovação e mudança são suas duas principais mensagens. No entanto, prepare-se, porque elas serão feitas de forma drástica e nada agradável. Outro aspecto importante de seu simbolismo é o passado. Para que as mudanças necessárias aconteçam e rápido o primeiro passo é superar as coisas que já aconteceram e se soltar para uma nova realidade. A morte em si na imagem é sinal de resistência, pois o seu corpo ainda sobrevive."
+    },
+    {
+      "name": "A TEMPERANÇA",
+      "image": "arcano14.jpg",
+      "description":"O chamado a atenção para o equilíbrio mental, material, espiritual e sentimental é sua maior mensagem. Busque coisas e situações mais concretas para a vida. A Temperança permeia as bases mais importante da vida: a emoção, a razão e o espírito. O ponto forte da carta é que ela representa a flexibilidade, ou seja, a habilidade de lidar com a situações de forma mais adaptável."
+    },
+    {
+      "name": "O DIABO",
+      "image": "arcano15.jpg",
+      "description":"Uma carta como está deve ser levada em consideração, porque ela representa conflitos interiores. O bem e o mal estão se movimentando dentro de si e alguns dilemas vão aparecer na vida. Portanto, antes de tudo, pense bem para tomar uma decisão. Analise as consequências que podem vir a gerar e faça a melhor escolha."
+    },
+    {
+      "name": "A TORRE",
+      "image": "arcano16.jpg",
+      "description":"Está para nascer uma carta mais temida do que a “A Torre”. Ela traz consigo um aviso de transformação que pode vir a acontecer a base de rompimentos indesejáveis. É exatamente por isso que a figura mostra as pessoas caindo, porque a ação é do nada e vem dos céus. Portanto prepare-se para enfrentar o caos."
+    },
+    {
+      "name": "A ESTRELA",
+      "image": "arcano17.jpg",
+      "description":"Não é de se admirar que a estrela represente em nossas vidas sinal de luz e renovação. Acompanhada da mulher nua ela representa o “deixar para trás”. Sua nudez é sinal de livramento de sentimentos ruins, desapego e prenúncio de otimismo. Sem essa âncoras é possível agora caminhar em direção a uma nova vida."
+    },
+    {
+      "name": "A LUA",
+      "image": "arcano18.jpg",
+      "description":"A princípio, os dois cães, as duas torres e as gotas atraídas pela lua são símbolos fortíssimos que anunciam a necessidade de reflexão das direções. Procure esclarecer os sentimento e reanalisar as condutas da vida, porque elas precisam urgentemente de mudanças. Pare para refletir sobre sua vida pessoal e profissional. Pense bem em como as vêm conduzindo até hoje e o que seria necessário mudar. Seu estado físico aparenta ansioso e exausto. Tome cuidado com os aspectos da saúde, pois o caos não é nada agradável para se manter equilibrado. Tente procurar essa mudança. Mude de ambiente isso talvez posso ajudar a achar um lugar mais tranquilo para se desenvolver."
+    },
+    {
+      "name": "O SOL",
+      "image": "arcano19.jpg",
+      "description":"Não poderia ser diferente a mensagem quando o assunto é o O Sol. Sua luz é sinal de positividade e está completamente associado aos objetivos e sucesso. Os sentimentos em relação a ela são os mais agradáveis possíveis. Alegria, força, virilidade, intuição pautada sobre a razão são suas maiores qualidades."
+    },
+    {
+      "name": "O JULGAMENTO",
+      "image": "arcano20.jpg",
+      "description":"Olhe bem para as características da carta. No topo há um anjo com uma corneta e isso  está ligado a “anunciação”. Muitas coisas boas virão se depender dos sinas dessa carta. Em relação ao passado, as coisas que foram plantadas serão colhidas no momento atual e o futuro guarda novas oportunidades para abraçar. A dica é: organize-se mentalmente e use de tudo que cultivou para tomar as melhores decisões. A hora é agora! Devido a importância é possível que os fatos gerem certas ansiedades, então fique atento aos sentimentos."
+    },
+    {
+      "name": "O MUNDO",
+      "image": "arcano21.jpg",
+      "description":"A carta O Mundo simboliza a conquista da autoconsciência que traz sucesso, vitória e plenitude. Para quem já conhece como jogar Tarot, sabe que ela é o alcance de todos os seus projetos, o sucesso iminente. Você estará em pleno bem-estar emocional e material, pois o mundo está a seu favor. Lembrando que todas essas conquistas são frutos de seu árduo trabalho e esforço na vida, nada veio de graça. A Carta Mundo no Tarot é uma coroação para quem sempre se empenhou muito e se dedicou em cada quesito da vida. Alguns significados são: autoconhecimento, realização, equilíbrio, encontro com a perfeição, virtuosidade, efeitos benéficos, boa vida e conquistas positivas."
+    },
+    {
+      "name": "O LOUCO",
+      "image": "arcano22.jpg",
+      "description":"A carta o Louco tem uma curiosidade, ela é a última do Tarot, – a de número 22 – mas também é considerada a carta 0 (zero) porque tudo se renova e ela por sua vez é o início e fim do baralho. No fim das contas, o Louco não tem numeração certa. A penúltima carta de número 21 é o Mundo, ou seja, às vezes na vida é necessário retornamos para o ponto de partida, o novo ciclo e esta é a energia da carta do Tarot o Louco. Impetuosidade, vontade de viver, entusiasmo temporário, integridade e otimismo, essas são algumas definições deste arcano. Porém ela vem para quebrar o ciclo completo, exemplificando: cada carta do Tarot com seu número expressa uma história de evolução, atitudes que tomamos para cada área de nossa vida, o Louco surge então como um coringa, de repente ele entra na linha da jogada e a interrompe, nos jogando a um novo caminho e são nesses pontos que alguns planos e metas não são concluídos, mas novos horizontes são definidos."
+    },
+    {
+      "name": "ÀS DE COPAS",
+      "image": "arcano23.jpg",
+      "description":"A carta Ás de Copas no Tarot revela uma forte energia de alegria, amor, prosperidade e abundância que poderão contagiar aqueles que viraram a carta e também os que convivem com o consulente. Uma taça única e grande ocupando a imagem do Ás de Copas demonstra a abundância e a possibilidade de regozijo pela conquista de algo e a realização dos sonhos planejados. A resolução de todos os problemas com força vital, energia, ímpeto e equilíbrio trazem proteção para os objetivos, plenitude e estratégia nas diretrizes que se deseja traçar e o estabelecimento da alegria pessoal. A carta sugere diversos aspectos positivos e aconselha sobre a busca da felicidade e a harmonia que deve ser prioridade para atingir o equilíbrio. É importante ressaltar que um cálice é demonstrado de forma grande para apontar a abundância e o equilíbrio."
+    },
+    {
+      "name": "2 DE COPAS",
+      "image": "arcano24.jpg",
+      "description":"A Carta 2 de Copas representa a harmonia em relacionamentos. Tem uma forte ligação com envolvimentos amorosos e a vida de casais. Muito parecida com a Carta Enamorados, sua interpretação é um pouco menos profunda, ela simboliza uma união entre pessoas para o alcance de algo em comum, que trará benefícios para ambos. Sua representação simbólica traz taças repletas de água, elemento responsável pela vida. Tudo se forma ou transforma a partir de sua manifestação. O Dois de Copas anuncia que um parceiro está para chegar, seja ele para negócios, ou para o amor, mas será alguém que possui os mesmos planos que você e tem uma visão do futuro muito parecida com a sua. Haverá harmonia entre ambos e esse ciclo será muito proveitoso, repleto de realizações. A comunicação será muito fácil, já que há sintonia entre os pensamentos. Aproveite essa fase para colaborar com os sonhos do parceiro em questão e para realizar os seus planos. Na saúde estará tudo estável, procure manter uma rotina saudável em outros ciclos."
+    },
+    {
+      "name": "3 DE COPAS",
+      "image": "arcano25.jpg",
+      "description":"Um período de sublimação, que leva o consulente à jornada de busca pela sua felicidade e também o ponto final para situações que se prolongavam com tensões e problemas. A carta Três de Copas do Tarot é um arcano menor que mostra que os acordos bem sucedidos acontecerão, e também traz abundancia no plano do amor. Três cálices são representados na carta 3 de Copas. Os cálices podem ser vistos como receptáculos da água que nos remetem às emoções. O seu significado nos mostra que o consulente deve ter uma visão otimista do futuro e encarar os desafios que a vida oferece. Muitos pesquisadores chamam o 3 de Copas de “A Consumação”. Isso se deve ao fato do consulente estar em busca de sua essência interior, buscando uma máscara social que pudesse representa-lo nos jogos da vida mas, ao mesmo tempo, permaneciam presos dentro de si desejos e vontades que queria satisfazer. Esse é o momento de consumar essas questões que ficaram à mercê de suas ações do passado."
+    },
+    {
+      "name": "4 DE COPAS",
+      "image": "arcano26.jpg",
+      "description":"A carta quatro de copas no Tarot traz um simbolismo que apresenta o cansaço e a necessidade de parar e repensar nos elementos que compõem a sua vida. O Arcano 4 de Copas mostra que existe insatisfação, desânimo, diversas dúvidas e um desequilíbrio que leva ao estágio de estagnação. Este é o momento de parar para refletir e analisar os diversos aspectos da sua vida, bem como compreender suas concepções de prazer, satisfação e disposição para as suas atividades diversas. Este é um momento de reflexão, meditação e de busca pela introspecção. É importante levar adiante os processos de paz interior e de equilíbrio."
+    },
+    {
+      "name": "5 DE COPAS",
+      "image": "arcano27.jpg",
+      "description":"A carta 5 de Copas no Tarot fala sobre tristeza, mágoa, decepção e abandono. É uma carta negativa e que traz aspectos que devem ser trabalhados no interior de cada um. O arcano Cinco de Copas no Tarot sugere frustração como resposta à uma ação executada e arrependimento de decisões no âmbito emocional. Além disso, essa carta do Tarot fala sobre a falta de amor próprio sendo introduzida na alma do consulente. É importante que se compreenda como o amor-próprio pode construir bases sólidas para quaisquer relações. A partir do momento que você se ama é possível estabelecer ligações com as demais pessoas do mundo sem exercer a dependência emocional, relevada pela carta."
+    },
+    {
+      "name": "6 DE COPAS",
+      "image": "arcano28.jpg",
+      "description":"O espírito jovem tomará conta da sua vida! Essa é a principal mensagem da carta 6 de Copas. Você estará em um momento de felicidade e de muita bondade, algo realmente puro e infantil, pois se encontrará na busca pelas coisas boas que te faziam sonhar na infância. A nostalgia te induzirá a procurar por situações divertidas que te encham o peito da alegria inocente de viver. Aproveite e desfrute deste momento, porque o 6 de Copas no Tarot te trará a boa energia da juventude. Perceba através do seu olhar de menino (a) as possibilidades que você têm em seu caminho, encha seu peito dessa boa vibração, seja criativo, curioso, atento de forma divertida e leve, esse período tem muito para contribuir com a sua evolução espiritual, pois na paz de espírito você encontrará possibilidades e alimentará seus sonhos."
+    },
+    {
+      "name": "7 DE COPAS",
+      "image": "arcano29.jpg",
+      "description":"Esta carta tem um significado diferente, o 7 de Copas é um aviso para que você dê mais atenção as mensagens do seu inconsciente, pois ele está te transmitindo algo importante. Ou seja, seus sonhos podem te dizer muito mais do que você imaginava, por isso preste atenção neles e procure orientações. Confie mais em sua intuição, fique alerta aos detalhes, ao ambiente no qual você está, nas pessoas, em tudo que te cerca. Não permita que o ócio tome conta de sua vida, o Sete de Copas diz que você está diante de muitas escolhas e por ter dúvidas de como reagir e qual seguir, você permite que as oportunidades escapem. Atenção para os assuntos importantes, mesmo que sua alma esteja repleta de confiança e uma sensação imensa de poder, se você não souber administrar o seu tempo e investir no que é interessante tudo passará e você ficará a “ver navios”, essa é a principal advertência da carta 7 de Copas do Tarot."
+    },
+    {
+      "name": "8 DE COPAS",
+      "image": "arcano30.jpg",
+      "description":"A Carta 8 de Copas traz a mensagem de que uma das poucas coisas que podemos ter certeza na vida é que tudo passa. A vida está constantemente em movimento e novos ciclos surgirão. Quanto a essa representatividade do 8 de Copas no Tarot, ela se assemelha muito a carta A Morte. A forma que agimos e os acontecimentos que surgem em nossas vidas definem o caminho futuro que passaremos, nos colocando novas opções e aprendizados. O Oito de Copas é uma carta positiva, que significa que soluções surgirão e você estará pronto para vivenciar novos ares, estará mais leve e com a consciência tranquila. Porém o 8 de Copas pede que preste atenção em como lida com a sua vida, pois a solução lhe trará grande paz e alegria. Algo pode querer te levar para o caminho errado e parece que você não consegue se desprender dessa situação. Não entre em desespero, pois se parar por um momento para analisar, verá que é algo muito fácil de contornar e que você estava fazendo uma tempestade em um copo d’água."
+    },
+    {
+      "name": "9 DE COPAS",
+      "image": "arcano31.jpg",
+      "description":"Felicidade, noivado, casamento e união. A carta 9 de Copas no Tarot sugere a harmonia, sucesso, recompensa sobre todos os esforços, plenitude e lealdade. O significado da carta traz aspectos de bons acordos, vitória e alegria evocando a necessidade da honestidade e do cumprimento da palavra. O 9 de Copas simboliza o cumprimento dos objetivos, realização, prazer, reconhecimento dos dons, realzação pessoal, sonhos concretizados, conquista e satisfação. Uma carta muito positiva que traz ótimas promessas para sua vida."
+    },
+    {
+      "name": "10 DE COPAS",
+      "image": "arcano32.jpg",
+      "description":""
+    },
+    {
+      "name": "PRINCESA DE COPAS",
+      "image": "arcano33.jpg",
+      "description":"A carta Princesa de Copas representa a impetuosidade da jovialidade. Ela é a expressão da ação cheia de esperanças e alegrias, algumas vezes pode parecer imaturo e com riscos, mas o poder de correr atrás dos sonhos sem medir consequências falará muito mais alto neste período de espírito rejuvenescido. Sua aura atrairá pessoas em seu caminho, esse espírito cheio de energia e jovial trará pessoas leais ou sanguessugas para sua vida. Por isso analise bem quem deseja te acompanhar e que possui o valor necessário para somente de agregar bons momentos. Dispense aqueles que são interesseiros e as amizades momentâneas."
+    },
+    {
+      "name": "CAVALEIRO DE COPAS",
+      "image": "arcano34.jpg",
+      "description":"É momento de meditar, de olhar para você mesmo e perguntar se o que você vive, seja no lado emocional, profissional ou financeiro é o que realmente você espera e quer para a sua vida. O Cavaleiro de Copas trará para a você uma explosão de sentimentos, sendo assim, se você não estiver bem resolvido (a) com alguma questão, você se sentirá balançado. Seja honesto consigo mesmo, não deixe somente as emoções te guiarem, procure enxergar tudo de uma forma crítica, você precisará avaliar os seus passos, esta carta trouxe com ela muito sentimentalismo, o que te deixará confuso se perguntando o que realmente te faz feliz, e o que te decepciona e traz tristezas. Você também estará à procura da perfeição, (o que não existe, saiba disso) assim, esta situação pode te colocar em um mundo fantasioso, muito romântico, principalmente pelo fato de que, alguém aparecerá em sua vida para deixar as coisas mais confusas ainda. Portanto, foque no que é necessário: se você não está feliz com algo, tudo bem encerrar e começar uma nova jornada, entretanto, entenda que esse novo alguém não é perfeito, que essa nova situação não é um conto de fadas. O motivo é que  simplesmente porque a vida não é assim, todos erram, todos falham, pode ser que dê certo ou pode ser que não. Respire fundo, deixe o seu raciocínio agir e coloque na balança o que vale a pena e o que realmente é fruto somente de suas expectativas."
+    },
+    {
+      "name": "RAINHA DE COPAS",
+      "image": "arcano35.jpg",
+      "description":"O significado da Rainha de Copas (Dama de Copas) no Tarot conecta a pessoa que virou essa carta ao mais profundo sentimento de altruísmo. Esse sentimento se manifesta através do esforço diário e de muita dedicação. O simbolismo deste arcano do Tarot reforça a relação de transcendência com as forças do universo. Conecta os seres humanos ao amor universal, sucesso e plenitude. A Rainha de Copas no Tarot está conectada ao elemento água, ou seja, às emoções e ao amor. Na carta do Tarot podemos observar que é a Rainha de Copas que segura o cálice com a água, ela possui o domínio das emoções, o controle e o equilíbrio."
+    },
+    {
+      "name": "REI DE COPAS",
+      "image": "arcano36.jpg",
+      "description":"O Rei de Copas representa certeza nas decisões e benevolência. É um momento repleto de autocontrole emocional, de compreensão e de ligação com a família. Você está em uma fase ótima para relacionamentos. É o momento de dar conselhos, de estar com amigos, de investir no amor e de sabedoria. Seu poder de concentração está altíssimo, você consegue facilmente descobrir respostas com maturidade e sutileza.O Rei de Copas no Tarot indica que você é a pessoa certa para aquele amigo que precisa de consolo e apoio, é um período em que sua sensibilidade para entender a natureza humana está a flor da pele. Saberá lidar facilmente com resoluções mesmo em época de conflitos e o mais importante, você estará disposto a escutar e ajudar."
+    },
+    {
+      "name": "ÀS DE ESPADAS",
+      "image": "arcano37.jpg",
+      "description":"O que você guarda precisa fluir e exteriorizar, essa é a mensagem que a carta Ás de Espadas no Tarot quer lhe passar. De elemento ar, geralmente as cartas com este naipe trazem uma mensagem de perdas, mas o Ás de Espadas é uma carta positiva. Ela diz que você tem em sua mente tudo que é necessário para alcançar o sucesso, você só precisa colocar isso para fora. Lhe falta motivação e coragem, mas você precisa agir. Não guarde nada que te pesa, se desprenda do que é problema, pois isso virará solução se extravasado. Se você não sabe ao certo o que tem que solucionar, com certeza está com aquela sensação ruim de algo te prendendo, saiba que logo mais você conseguirá ver o caminho e quando isso acontecer, será necessário a determinação para colocar em prática."
+    },
+    {
+      "name": "2 DE ESPADAS ,",
+      "image": "arcano38.jpg",
+      "description":"O Dois de Espadas veio lhe dizer: você se recusa a enxergar a realidade à sua volta, afasta as pessoas ao seu redor e – ao mesmo tempo – vive na defensiva. Muitas vezes vive de aparências, contesta tudo o que te dizem e se sente travado e repleto de sentimentos presos no coração. Seus olhos muitas vezes estão vendados e é impossível perceber qual a sua realidade, pois você insiste em não permitir que as coisas entrem ou saiam do seu coração. Você finge não se importar com as sensações que te abraçam, demonstra frieza e evita o confronto com os sentimentos do mundo real."
+    },
+    {
+      "name": "3 DE ESPADAS",
+      "image": "arcano39.jpg",
+      "description":"A carta Três de Espadas no Tarot simboliza as dores e ferimentos trazidos por mentiras, rompimentos ou processos que possam causar desilusão ao consulente, mas sua principal mensagem é: para se curar de qualquer mal, seja simplesmente honesto, e é a honestidade consigo mesmo, medite, olhe para dentro de si e perceba o verdadeiro caminho que deve seguir. Sabemos que há diversos desafios dos quais precisamos superar para alcançarmos nossos sonhos, por isso tenha o conhecimento de que provações ocorrem para nos fortalecer, e para te ajudar nessa etapa, receba orientações valiosas que poderão te auxiliar neste momento de tarólogos experientes, basta clicar neste link e escolher qual deles tem o melhor perfil para sua questão."
+    },
+    {
+      "name": "4 DE ESPADAS",
+      "image": "arcano40.jpg",
+      "description":"O naipe de Espadas simboliza os conflitos que vivenciamos, sejam eles externos ou internos. De elemento ar, o 4 de Espadas é uma carta que pede que haja paciência, que tome este momento para descansar, que busque compreender qual o seu papel em tudo que está vivendo e presenciando em sua vida, e para analisar o que você viveu até aqui. Respire e extraia o que é importante do passado para se preparar para os próximos momentos de seu caminho, e resolva os medos e receios interiores. O Quatro de Espadas diz que neste momento você precisará meditar para encontrar as melhores soluções, então entenda esse período como uma oportunidade de aprimorar seu autoconhecimento e adquirir experiências valiosas em sua vida. Esta situação que você enfrentará é decorrente de algo que deveria ter sido solucionado no passado mas que você não conseguiu ou simplesmente ignorou, agora chegou a hora derradeira: não é mais possível deixar para depois. Evite opiniões dos outros ao tomar sua decisão, pois esse é um momento seu, e é necessário que você encontre as respostas. Se interiorize, e busque todas as saídas para suas dificuldades, sem se esconder em ideias que muitas vezes criamos em nossa cabeça para nos prender ou para deixar algo importante para depois."
+    },
+    {
+      "name": "5 DE ESPADAS",
+      "image": "arcano41.jpg",
+      "description":"O naipe de espadas é o mais temido por possuir muitos alertas e indícios de momentos complicados, cabe a nós compreendermos que não existe um caminho perfeito na vida e todos terão suas provações, somos nós que deveremos aprender a identificar e lidar com esses obstáculos de forma que eles tornem aprendizado e inspiração para próximas eventualidades. A carta 5 de Espadas não é contrária ao significado geral, ela aparece como um aviso de momentos em que você estará com uma visão distorcida dos fatos, podendo interpretar mal as situações com muita facilidade, gerando transtornos e enganos. O 5 de Espadas no Tarot indica que sua autoconfiança estará fraca e os pensamentos mais negativos te influenciarão com facilidade. Muito cuidado com as pessoas de má índole que usarão deste momento de sua fragilidade para puxar seu tapete."
+    },
+    {
+      "name": "6 DE ESPADAS",
+      "image": "arcano42.jpg",
+      "description":"A Carta 6 de Espadas no Tarot simboliza uma transição, onde a fase ruim que enfrenta irá passar a qualquer momento. Essa passagem pode ser física ou emocional, e o grau que isso te atingirá depende exclusivamente de como você irá lidar com as divergências. É o momento de desprender-se do passado para que ele seja um aprendizado, mas vale reforçar: não se retenha a ele. É importante lembrar que essa fase logo irá passar, por isso espere por boas notícias e procure enxergar novas metas, aceite o novo."
+    },
+    {
+      "name": "7 DE ESPADAS",
+      "image": "arcano43.jpg",
+      "description":"A carta 7 de Espadas indica a presença de mentira em sua vida, podendo ela ser manifestada de alguém para com você, ou a partir de você mesmo. Essa fantasia em que vive alimentada por mentiras, foi uma forma que você encontrou para fugir da realidade, pois ela cada vez mais se mostra sufocante e difícil de ser superada. Entretanto, saiba que essa não é, nem nunca será a melhor maneira de resolver os problemas, e quanto mais rodeios você fizer até encarar a situação, pior ela ficará, esse é o alerta trazido pelo 7 de Espadas."
+    },
+    {
+      "name": "8 DE ESPADAS",
+      "image": "arcano44.jpg",
+      "description":"O Oito de Espadas no Tarot é uma das cartas menos positivas do baralho e revela perda, fracasso ou distanciamento de alguém importante. Essa situação traz conflitos, inseguranças e a necessidade da superação. Mas lembre-se que esse é um arcano menor, então significa que é uma situação a qual você pode agir para modificar, a carta só aparece para te deixar atenta(o) às circunstâncias chatas que talvez surjam e que você tem que ter consciência para poder livrar-se delas. Este arcano representa seus desafios que enfrenta em sua vida e que te causam muita dor e tristeza, principalmente porque outras pessoas te fizeram mal e foram injustas com você."
+    },
+    {
+      "name": "9 DE ESPADAS",
+      "image": "arcano45.jpg",
+      "description":"O 9 de Espadas no Tarot, a carta mais temida do baralho. Ela traz uma mensagem de uma carga muito depressiva e solitária. Será um período de desgostos, inimizades e fragilidade. Porém é uma fase também de conclusões e fechamentos. É muito importante procurar mais do que nunca se fortificar. Cerque-se de pessoas e coisas que te façam bem. Procure a melhor forma de passar por esse momento turbulento, pois ele passará."
+    },
+    {
+      "name": "10 DE ESPADAS",
+      "image": "arcano46.jpg",
+      "description":"A carta 10 de Espadas traz com ela uma forte mensagem de necessidade de mudanças, de encerramento de um ciclo e a necessidade de que uma nova etapa surja em sua vida! Apesar de sua imagem que nos traz preocupação, o Dez de Espadas é na verdade um aviso de que não podemos alimentar ilusões, nem nos achar vítimas do destino ou de qualquer outra coisa. Embora a vida não esteja seguindo o fluxo que desejamos, não significa que tudo foi em vão, ou que você fracassou, eventualmente surgirão novos caminhos e horizontes para seguir, portanto, abandone o que pesa e enfrente os novos desafios que tudo o correrá bem, desde que você aceite e acredite nisso."
+    },
+    {
+      "name": "PRINCESA DE ESPADAS",
+      "image": "arcano47.jpg",
+      "description":"A Princesa de Espadas representa no Tarot um aviso de que você terá que enfrentar alguns momentos difíceis, mas que estará repleto de coragem, boa vontade e disposição para isso. Para que você possa alcançar o que planeja, terá de passar por alguns obstáculos e aceitar alguns desafios. Todos problemas surgirão de forma rápida, não tem como fugir, então mantenha-se atento a tudo que te rodeia. Não se descuide de sua saúde, essa carta também pode ser um alerta referente a esse assunto. O elemento ar na Princesa de Espadas do Tarot, representa os novos ventos que surgirão, com eles virão empecilhos, mas também novas metas. É aconselhável agir com cautela para não cair em um poço fundo. Você terá tudo a seu favor para lutar, conseguirá muito conhecimento oriundo da vivência dessa fase, se tornará uma pessoa mais sábia."
+    },
+    {
+      "name": "CAVALEIRO DE ESPADAS",
+      "image": "arcano48.jpg",
+      "description":"O Cavaleiro de Espadas significa coragem e determinação para enfrentar os desafios, mas você tem vivido assim o tempo todo não é mesmo? Você é uma pessoa que não desanima perante os desafios e sabe muito bem lutar pelos sonhos. Pois continue assim, pois é isto que esta carta quer lhe pedir. As coisas continuarão a dar certo para você, tudo será resolvido porque você tem garra para isso. O Cavaleiro de Espadas no Tarot indica que está no caminho certo, por mais que você encontre muitos desafios você nasceu para ser honrado por tudo aquilo que batalha. Analise bastante o cenário para tomar as decisões, abuse de sua inteligência para decidir as questões pendentes, tenha firmeza em seu posicionamento, acredite em teu poder de luta, não deixe a inquietação te tirar do foco, sua honestidade é sua essência para encontrar os melhores resultados."
+    },
+    {
+      "name": "RAINHA DE ESPADAS",
+      "image": "arcano49.jpg",
+      "description":"A carta do Tarot Rainha de Espadas (Dama de Espadas) conecta a figura da mulher, – sentada em um trono e que possui uma espada em punho – ao elemento ar da natureza. A suavidade, leveza, destreza, agilidade, intelectualidade do elemento que ela representa são constantes e presentes naqueles que viraram essa carta. Por outro lado neste arcano do Tarot podemos notar outros atributos que devem ser amenizados, como a distração e devaneios. Embora você tenha bons pensamentos críticos, inclusive quanto à você, é fundamental balancear o peso da autocrítica para que as cobranças sejam mais leves e os resultados mais brandos. O intelecto, as artes, poesias e literatura formarão sempre um universo de situações fundamentais para a sua vida. As características principais da carta Rainha de Espadas do Tarot envolvem o criticismo, como citado, austeridade, integridade, honestidade e exigência."
+    },
+    {
+      "name": "REI DE ESPADAS",
+      "image": "arcano50.jpg",
+      "description":"A carta do Tarot Rei de Espadas traz como significado a experiência e o poder intelectual que estarão presentes na sua vida. A armadura representa o conhecimento que você tem e que servirá de intermediária entre você e o mundo. A utilização do poder intelectual do Rei de Espadas para lidar com os problemas que poderão aparecer, te auxiliará a influenciar as pessoas que estão ao seu lado, além de fortalecerem o seu dom de discutir e pensar em outros pontos de vista e de ideias diversas. Ao mesmo tempo esse arcano do Tarot deixa claro que você está pronto para enfrentar os problemas, compreender a realidade e utilizar o seu raciocínio para influenciar o que for necessário. O Rei de Espadas do Tarot também pode trazer a mensagem de que alguém muito importante para você servirá de exemplo para o seu progresso, agindo como um impulsionador para te auxiliar. Sendo assim, essa pessoa se mostrando autoritária, pode fazer com que você se sinta inibido em se posicionar."
+    },
+    {
+      "name": "ÀS DE PAUS",
+      "image": "arcano51.jpg",
+      "description":"A carta do Tarot Ás de Paus (bastos/ bastões) é um dos símbolos do fogo. Seu significado representa a frutificação, prosperidade e abundância. Ela simboliza o início de novos empreendimentos, o começo de possíveis inovações. O Ás de Paus também representa as transformações, a força vital e a energia que rege o mundo. Momento certo para utilizar as forças da criação para chegar à energia de realização. Um bastão de madeira é segurado por uma mão. Desse bastão diversas folhas surgem como brotos nascendo, sugerindo o nascimento e a manutenção da abundância. Essa é a energia da vitalidade, fecundidade, fertilidade que identifica um período de sorte, crescimento e novas oportunidades."
+    },
+    {
+      "name": "2 DE PAUS",
+      "image": "arcano52.jpg",
+      "description":"A carta 2 de Paus está relacionada ao elemento fogo, a carta significa crescimento e muita energia. O Dois de Paus no Tarot simboliza a ação. A carta apresenta ao consulente a necessidade de superar desafios, assim como de conquistar ou concretizar algo que já havia sido iniciado. Ela traz um alerta para possíveis perdas e simboliza que é preciso atenção a tudo e todos que estão à sua volta. No campo afetivo o 2 de Paus revela que sonhos passados já foram capazes de proporcionar sofrimento e tristeza. Mas reflete que estes empecilhos foram importantes e necessários para vencer obstáculos e conquistar realmente aquilo que você desejava ou merecia."
+    },
+    {
+      "name": "3 DE PAUS",
+      "image": "arcano53.jpg",
+      "description":"O 3 de Paus é um aviso de que é preciso tomar conhecimento daquilo que está a nossa frente. Por mais complicado que pareça, é o momento de encarar a vida. Todas as suas energias estarão a favor da mudança, por isso você sentirá a necessidade de dar um passo maior, de ousar. Essa passagem exige de você coragem, mesmo que pareça perigoso, você deverá aceitar o desafio da vida. Caso você não se mova, talvez haverão consequências que não poderão nunca mais serem modificadas. Afinal, em muitos casos é melhor se arrepender do que já fez, do que das coisas que deixou de fazer."
+    },
+    {
+      "name": "4 DE PAUS",
+      "image": "arcano54.jpg",
+      "description":"A carta 4 de Paus te trará surpresas! E são ótimas surpresas, você tem um amigo maravilhoso que te ajudará muito nessa fase de sua vida. Tudo o que você receberá agora, lembre-se: você merece. O Quatro de Paus diz que serão notícias de momentos de felicidade e alegria colhidos devido a tudo o que você tem plantado durante sua jornada. Agradeça ao Universo porque você está em uma boa caminhada e escolheu a trilha certa. Ser grato é uma ótima forma de manter-se puro e em evolução espiritual, assim cada momento será uma eterna aprendizagem."
+    },
+    {
+      "name": "5 DE PAUS",
+      "image": "arcano55.jpg",
+      "description":"A Carta 5 de Paus diz sobre algo que você está desprendendo muito esforço e atenção, mas não dará certo. Ela surge como um aviso em meio a um período tempestuoso te alertando que provavelmente seja melhor você trocar de caminhos para alcançar os objetivos. Você se sentirá facilmente deslocado e as opiniões alheias te balançarão e irritarão muito. Coisas pequenas e sem grande importância gerarão desavenças e discussões."
+    },
+    {
+      "name": "6 DE PAUS",
+      "image": "arcano56.jpg",
+      "description":"A carta 6 de Paus, simboliza o sucesso de forma gloriosa em tudo na vida, mas sua principal mensagem na verdade é o alerta de que você precisa ser uma pessoa controlada e humilde, haja de forma ponderada, sempre com cuidado com o que fala sem pensar. Você é uma pessoa que desfrutará de bons momentos da vida, por isso o 6 de Paus te traz uma mensagem de realizações, mas seu recado mais forte é o aviso de que sua vaidade estará exaltada, então seu ego poderá te dominar se você não for uma pessoa sábia, e essas atitudes podem te derrubar."
+    },
+    {
+      "name": "7 DE PAUS",
+      "image": "arcano57.jpg",
+      "description":"O 7 de Paus é uma carta que traz o aviso de que você terá que focar na fé e continuar a ser uma pessoa forte. Ela simboliza a disputa, o que leva a crer que você será colocado a prova. É muito importante saber se posicionar, acreditar em si mesmo, e ter convicção, pois ela também indica a superação dos desafios se houver boa vontade de sua parte. Não deixe o que vem de fora te abalar, pois você pode ser mais forte do que toda força externa. Esse Arcano 30 tem sua imagem representada por sete bastões, em algumas ilustrações é mostrado sendo empunhado por alguém que demonstra coragem. Isso significa que há todo o poder necessário para triunfar, para alcançar o êxito. É o momento de se preservar espiritualmente. Portanto, não deixe que outras pessoas te perturbem. Seja determinado, pois você remará contra a maré. Esse seu período não será fácil, e para superá-lo você terá que acreditar em si mesmo. Muitos obstáculos surgirão tentando te derrubar, mas nunca se esqueça que eles podem ser superados."
+    },
+    {
+      "name": "8 DE PAUS",
+      "image": "arcano58.jpg",
+      "description":"A carta 8 de Paus no Tarot representa um movimento que segue contínuo. Anuncia também uma reação imediata e a necessidade do uso da intuição e de percepções extra sensoriais nas situações da vida. Nesse momento é importante que essa ação seja executada pois ela refletirá nas questões do futuro. Um trabalho executado por algum tempo chega ao fim mas traz a certeza de que novas possibilidades e oportunidades foram criadas por meio dele. Essa mudança de atividade no âmbito da prosperidade auxiliará na conclusão daquilo que se deseja."
+    },
+    {
+      "name": "9 DE PAUS",
+      "image": "arcano59.jpg",
+      "description":"A carta Nove de Paus no Tarot simboliza alguns obstáculos, mas principalmente a sua força para superá-los. Esta carta garante uma energia única para que você consiga lidar com as adversidades. O 9 de Paus te encherá de vibração positiva que te impulsionará às conquistas, você se sentirá magicamente disposto a ultrapassar barreiras e limites que o destino colocará à sua frente, e o melhor de tudo: de forma sábia e paciente. O mais importante sobre a carta 9 de Paus do Tarot é que ela marca algumas questões interessantes mostrando que as dificuldades, o momento de estagnação e até de opressão podem ser (e serão se assim você quiser) superados. Sendo assim, no Tarot o 9 de Paus sugere que que as expectativas são favoráveis para o consulente. Ela revela que os atrasos que surgirem nessa situação podem ser vencidos e que um novo começo trará esperanças."
+    },
+    {
+      "name": "10 DE PAUS",
+      "image": "arcano60.jpg",
+      "description":"A carta 10 de Paus no Tarot surge na tirada como um alerta para o que parece glorioso, não é um balde de água em suas realizações, mas sim um aviso de que mesmo que tudo pareça caminhando perfeitamente, talvez há algo para atrapalhar que você não percebeu. Você parece esgotado após investir tanto esforço em seus planos, os quais aparentemente estão indo bem, mas se sente carregando fardos pesados, com uma grande responsabilidade em suas costas, e costuma se culpar por tudo que acontece a sua volta. Não se prenda demais aos seus planos, nem os deixe soltos demais, tenha o equilíbrio e harmonia. Saiba ponderar as questões e fique atento aos obstáculos que surgirão, isso é normal na vida de qualquer pessoa. Se a carga parece muito pesada, analise como você poderia solucionar os problemas ao invés de lamentar ou desistir de seus ideais. Tire um pouco desse estresse de seu corpo, essa é a principal mensagem do Dez de Paus: saia para divertir, relaxar, medite, procure também no passado as respostas ou dicas para o seu futuro, elas sempre estão por lá em algum canto de sua vida. No Tarot o 10 de Paus pede para que você dê atenção somente ao que é importante e vital, não carregue os problemas dos outros, seja um pouco egoísta, foque em você!"
+    },
+    {
+      "name": "PRINCESA DE PAUS",
+      "image": "arcano61.jpg",
+      "description":"As Princesas no jogo de Tarot são representações do espírito jovem, que ao mesmo tempo que traz a energia de ação, também pode ser um imaturo se não soubermos direcionar as energias. A Princesa de Paus é o sinal de que alguém querido te trará notícias importantes e isso te preparará antecipadamente para eventos futuros. Seu espírito estará coberto de leveza e alegria, portanto aproveite para começar um novo caminho, invista em seus sonhos e projetos. No Tarot, a Princesa de Paus pede que pense em todos os tipos de relacionamentos que você tem na sua vida e recomece. Isso não significa que é para você terminá-los, e sim renová-los. Seu espírito cheio de juventude lhe trará mais estímulos e uma melhor aura para sua vida social."
+    },
+    {
+      "name": "CAVALEIRO DE PAUS",
+      "image": "arcano62.jpg",
+      "description":"A carta Cavaleiro de Paus traz para a sua vida uma energia para a renovação. Para a busca do desconhecido, do novo, de aventuras. Ela possui duas vezes o elemento de fogo, o que te dá o impulso para agir, para mover. É um novo caminho que você não planejava percorrer, mas que trará mais vigor e interesse por novos desafios. Surgirão oportunidades e você estará disposto a agarrá-las, não abrirá mão nem sentirá medo de se arriscar, porque sabe que ficar estagnado não te levará à lugar algum. Sua mensagem pode ser tanto positiva quanto negativa, depende muito do porque apareceu esse novo assunto em sua vida e do que ele se trata. Esta carta traz também a ideia de muita paixão, não tenha medo de encarar o que vier, sua coragem te guiará."
+    },
+    {
+      "name": "RAINHA DE PAUS",
+      "image": "arcano63.jpg",
+      "description":"Esse é um momento muito otimista! A carta Rainha de Paus no Tarot traz a mensagem de que suas paixões são todas profundas, sendo elas por pessoas amadas ou por sentimentos, como justiça por exemplo. Você possui o poder material, é o tipo de guerreira que luta por si e por sua família de forma disciplinada, o que lhe agrega também a aparência de fria, mas que não é o caso. É um período de muita compaixão em que buscará ajudar o próximo, é a sua hora de buscas por mudanças. Portanto, se mostrará disposta a procurar a verdade em tudo, para não cometer injustiças. Sua fome por autoconhecimento estará enorme, pois ele alimentará a abertura de seus novos caminhos."
+    },
+    {
+      "name": "REI DE PAUS",
+      "image": "arcano64.jpg",
+      "description":"A carta Rei de Paus no Tarot simboliza o poder do absoluto, da visão masculina e patriarcal que comanda, coordena e – muitas vezes – impõe situações. É também considerada um símbolo da fartura. Um homem sentado em um trono segura um cetro mostrando para a sociedade quem é o detentor do poder. Este arcano mostra que deve haver determinação nas ações do consulente para que possam alcançar o êxito, reconciliação e felicidade. O Rei de Paus do Tarot mostra como a produtividade e empreendimentos futuros serão férteis em quaisquer níveis. O naipe da carta do Tarot conecta o consulente às atribuições do elemento fogo que simboliza a transformação, garra, coragem, força de vontade e o ímpeto."
+    },
+    {
+      "name": "ÀS DE OUROS",
+      "image": "arcano65.jpg",
+      "description":"O Ás de Ouros indica que é o seu momento de colocar em prática os planos mais ousados, aqueles que você sempre teve receio de arriscar. Procure sempre a razão e os porquês com mais fundamento para sustentar as suas ideias, entenda que tudo dará certo desde que não seja algo jogado ao vento e sem planos."
+    },
+    {
+      "name": "2 DE OUROS",
+      "image": "arcano66.jpg",
+      "description":"O 2 de Ouros traz oportunidades e muitos acontecimentos em sua vida. É uma carta repleta de opções e escolhas a serem feitas, portanto não se deixe estagnar e permita que as mudanças aconteçam, assim, o medo de seguir em frente não será um problema, pois seu espírito anseia por uma nova estrada e novos desafios."
+    },
+    {
+      "name": "3 DE OUROS",
+      "image": "arcano67.jpg",
+      "description":"A carta 3 de Ouros apresenta um lado muito positivo no Tarot. O número 3 é considerado divino. Onde, em diversas culturas diferentes esse número está representando uma imagem importante, por exemplo: a Santíssima Trindade ou Isis/Osiris e Orus. É o resultado da soma do 1 masculino com o 2 feminino, gerando uma energia vital."
+    },
+    {
+      "name": "4 DE OUROS",
+      "image": "arcano68.jpg",
+      "description":"Não tenha medo de realizar os seus projetos de vida, se julgar necessário, vá com calma, mantenha o equilíbrio que você conseguirá, esta é uma das mensagens da carta 4 de Ouros. Você está estagnado em sua vida por receio de perder o que conquistou até aqui, esse medo te tornou uma pessoa até mesmo um pouco avarenta e egoísta, mas não tenha receio de agir assim de forma moderada, pois nem sempre esses atributos são tão maléficos, só você sabe o quanto suou para alcançar o que possui e não confiar nas pessoas é também uma forma de defesa e de se precaver a problemas futuros."
+    },
+    {
+      "name": "5 DE OUROS",
+      "image": "arcano69.jpg",
+      "description":"A carta do Tarot 5 de Ouros traz cinco moedas ou, muitas vezes, apresenta uma situação em que a pobreza, a falta de dinheiro e de abundância podem ser sinais de prejuízo e de desarmonia em muitos aspectos. O arcano Cinco de Ouros sugere que o consulente passará por um momento de desestabilização, desperdício de dinheiro, perda de dinheiro em investimentos profissionais e também a fragilização e enfraquecimento em assuntos relacionados ao coração. Mas saiba que ele também avisa que essa fase é passageira."
+    },
+    {
+      "name": "6 DE OUROS",
+      "image": "arcano70.jpg",
+      "description":"A carta 6 de Ouros no Tarot traz as energias de aperfeiçoamento, compreensão das limitações e também mostra um momento de indecisão. Ela te coloca em uma posição de generosidade, doação e amor incondicional com recorrentes dúvidas sobre qual a maneira que esse amor será retribuído a você. Este arcano sugere que é o momento de melhorar para que no futuro, essas ações gerem frutos. Importantes decisões dependem de você para o equilíbrio da vida então talvez seja o período de se retirar estrategicamente para compreender suas limitações pessoais."
+    },
+    {
+      "name": "7 DE OUROS",
+      "image": "arcano71.jpg",
+      "description":"A carta sete de ouros no Tarot tem um significado muito interessante. Ela indica que você provavelmente vive uma prisão interior que dificulta o enfrentamento de alguma mudança mais do que necessária no seu caminho. Neste momento você se encontra em uma situação de espera e de análise da sua vida e de tudo aquilo que conquistou até agora. Estar preso aos modelos atuais da sua existência podem ser fatores que te impedem de crescer e de abrir as portas para coisas muito melhores que estão esperando sua ação para acontecerem."
+    },
+    {
+      "name": "8 DE OUROS",
+      "image": "arcano72.jpg",
+      "description":"O 8 de Ouros traz o aviso de que é o momento de você dar início aos planos importantes em sua vida, pois esta carta representa o sucesso no que houver empenho e empreendimento, ou seja, neste momento tudo que você realizar com dedicação e confiança está destinado a dar certo. A carta 8 de Ouros pede que você faça seus objetivos ganharem formas, não tenha receio de se dedicar ao que você acredita e gostaria de realizar, visto que, sua energia neste período estará propícia para que você se concentre e realize as atividades da forma mais detalhada possível."
+    },
+    {
+      "name": "9 DE OUROS",
+      "image": "arcano73.jpg",
+      "description":"Esta carta representa a riqueza. O 9 de Ouros indica que você está no caminho correto para alcançar os seus objetivos. Você possui autonomia para decidir as questões as quais aborda e domínio para elaborar as melhores rotas. Este caminho correto nem sempre é só relacionado aos bens materiais, ele também pode representar saúde e amor por exemplo. Esta carta pede para que você não saia da direção em que seguir."
+    },
+    {
+      "name": "10 DE OUROS",
+      "image": "arcano74.jpg",
+      "description":"Chegou o momento de progredir! A Carta 10 de Ouros – como toda carta de número 10 – representa o final de um ciclo, onde algo será alcançado. Mudanças acontecerão em sua vida, no momento as coisas podem parecer meio incertas, mas aguarde que logo tudo começará a se mover para preparar o seu caminho para isso. O 10 de Ouros representa o sucesso, estabilidade e fartura e não só na área financeira, pode ser na familiar também. É uma carta positiva, que indica que você já percorreu todo um caminho de desafios e lutas para chegar até esse ponto. "
+    },
+    {
+      "name": "PRINCESA DE OUROS",
+      "image": "arcano75.jpg",
+      "description":"Esta carta mostra que você é ou encontrará no seu caminho uma pessoa poderosa e forte que será o combustível necessário para que tudo desenrole. Você colocará em prática os projetos e devido a este fator seus interesses particulares serão alcançados. Seus planos serão desenvolvidos de forma estruturada e a cada passo você conseguirá ser uma pessoa totalmente honesta consigo mesmo, sabendo seus limites e encontrando as melhores respostas para os desafios"
+    },
+    {
+      "name": "CAVALEIRO DE OUROS",
+      "image": "arcano76.jpg",
+      "description":"O Cavaleiro de Ouros traz a mensagem de que esse é um momento que exigirá muita competência. A inquietude e a determinação de provar para todos e para você mesmo do que é capaz, estarão presentes em sua vida. A carta Cavaleiro de Ouros no Tarot mostra que você está em busca de novos ares, novas possibilidades e desafios, pois você quer crescer na vida. Esse será o período em que seu pensamento estará totalmente prático e a razão costuma falar mais alto. Sendo assim, por se encontrar mais centrado, você buscará pelas melhores oportunidades e saberá como desfrutar delas. Competente, de confiança e comedido, agora é a hora para acumular fortuna e agir no momento propício. No Tarot o Cavaleiro de Ouros avisa que provavelmente você encontrará ótimas oportunidades financeiras."
+    },
+    {
+      "name": "RAINHA DE OUROS",
+      "image": "arcano77.jpg",
+      "description":"A Rainha de Ouros transmite calma, tranquilidade e paciência antes de agir, pois ela mantém o controle de tudo que lhe rodeia e assim garante mais segurança e proteção não somente à ela, mas a todos que lhe são de interesse. Seu modo de viver e agir sempre te beneficiam em algum momento de sua vida e essa energia positiva que você possui pode também despertar a inveja, portanto muito cuidado com as pessoas que vivem a rondar o seu caminho, este é um dos alertas da Rainha de Ouros no Tarot. Neste período, você estará zelando pela gentiliza e simplicidade, o que te resulta em uma aura encantadora e sedutora que te trará as pessoas amadas para mais perto de você. Você enxergará os obstáculos da vida como algo natural, que devem acontecer para que você possa aumentar o seu conhecimento, o que te trará mais sabedoria. Assim sendo, você se tornará uma pessoa mais resistente não somente fisicamente, mas também espiritualmente, desta forma seu espírito generoso surgirá para auxiliar as pessoas próximas e você cumprirá de forma honrosa todas as suas promessas."
+    },
+    {
+      "name": "REI DE OUROS",
+      "image": "arcano78.jpg",
+      "description":"Seu caráter sólido e seu intelecto lhe guiarão ao caminho certo. O Rei de Ouros representa o seu poder de trabalho e procura por aquilo que lhe faz bem. Neste momento você não temerá as dificuldades nem ameaças no seu caminho, com o Rei de Ouros, o Tarot te revela um alto nível de confiança em sua sabedoria e análise de situações e ambiente. Será um ótimo momento para investir em negócios ou ideias empreendedoras que você tiver. Esta carta expressa seu poder de organizar os assuntos e se sobressair diante de qualquer tipo de situação. Como um verdadeiro rei você não deixará se diminuir, e se manterá focado em seus objetivos, é uma pessoa em que todos podem depositar uma enorme confiança, um ótimo conselheiro."
+    }
+  ]
+}
