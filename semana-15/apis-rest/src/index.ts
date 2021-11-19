@@ -1,12 +1,28 @@
 import express, { Express, Request, Response} from "express";
 import cors from "cors";
 import { AddressInfo } from "net";
+import {users} from './data'
+import {user, UserType} from './types'
 
 const app: Express = express();
 
 app.use(express.json());
 app.use(cors());
 
+app.get("/users", (req: Request, res: Response) => {
+    let errorCode = 400
+    
+    try{
+        const allUsers: user[] = users
+        if(!allUsers){
+            errorCode = 404
+            throw new Error('Nenhum usuário encontrado')
+        }
+        res.status(200).send(allUsers)
+    }catch(err: any){
+        res.status(errorCode).send({message: err.message})
+    }
+})
 
 const server = app.listen(process.env.PORT || 3003, () => {
     if(server){

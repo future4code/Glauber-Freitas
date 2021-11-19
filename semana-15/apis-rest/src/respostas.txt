@@ -1,0 +1,17 @@
+Respostas dos Exercícios
+
+Exercício 1
+a - O método HTTP usado para retornar os users é o GET
+b - A entidade manipulada é "user"
+
+---------------------------------------------------------------
+
+Exercício 2 
+
+---------------------------------------------------------------
+
+Exercício 3
+
+---------------------------------------------------------------
+
+Exercício 4
