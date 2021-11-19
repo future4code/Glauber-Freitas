@@ -29,8 +29,21 @@ app.get("/users", (req: Request, res: Response) => {
 app.get("/users/search", (req:Request, res: Response) => {
     let errorCode = 400
     try{
+        let userFind: user[] | undefined
         const userType: string = req.query.usertype as string
-        const userFind: user[] | undefined = users.filter(user => user.type === userType)
+        const userName: string = req.query.userName as string
+        if(userType && userName){
+            userFind = users.filter(user => user.type === userType && user.name === userName)
+        }else if(userType && !userName){
+            userFind = users.filter(user => user.type === userType)
+            console.log(userFind)
+        }else if(!userType && userName){
+            userFind = users.filter(user => user.name === userName)
+            console.log(userFind)
+        }else{
+            throw new Error("Inclua algum parâmetro de busca")
+        }
+        
         if(!userFind){
             errorCode = 404
             throw new Error('Nenhum usuário encontrado')

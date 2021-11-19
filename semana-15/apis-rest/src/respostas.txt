@@ -7,10 +7,17 @@ b - A entidade manipulada é "user"
 ---------------------------------------------------------------
 
 Exercício 2 
+a - Os parâmetros foram passados por query params. Acho uma forma mais organizada de fazer uma "filtragem" de dados
+b - Não intendi muito bem a pergunta, se essa forma de garantir que apenas types válidos seja feita na hora de salvar 
+    os dados acho que a melhor forma é criar um enum, como está no notion, mas se for na hora da pesquisa acredito 
+    que esse detalhe tenha que estar na documentação da API.
 
 ---------------------------------------------------------------
 
 Exercício 3
+a - Ainda acho que para esse tipo de busca deva ser usado o query params, pois ainda pode acontecer de encontrar mais de um usuário
+    com o mesmo nome, acredito q o path param seja melhor utilizado para buscar um dado específico, portanto, eu utilizei o mesmo
+    endpoint do exercício anterior apenas adicionando o parâmetro de nome na busca
 
 ---------------------------------------------------------------
 

@@ -42,5 +42,12 @@ export let users: user[] = [
         email: "fred@email.com",
         type: UserType.ADMIN,
         age: 60
+    },
+    {
+        id: 7,
+        name: "Fred",
+        email: "fred@email.com",
+        type: UserType.NORMAL,
+        age: 60
     }
 ]
