@@ -20,20 +20,21 @@ app.get(
             }))
             res.status(200).send(result)
         }catch (err: any){
-            if(res.statusCode === 200){
-                res.status(500).end()
-            }else {
-                res.end()
-            }
+            res.status(400).send({message: err.message})
         }
         
     })
 
-//ENDPOINT para retornar os países por uma busca 
+//ENDPOINT para retornar os países a partir de um filtro
 app.get(
     "/countries/search", 
     (req: Request, res: Response) => {
         try{
+            if(!req.query.name && !req.query.capital && !req.query.continent){
+                res.statusCode = 400
+                throw new Error("Adicione pelo menos um parametro")
+            }
+
             let result: country[] = countries
 
             if(req.query.name){
@@ -59,11 +60,7 @@ app.get(
                 res.status(404).send("País não encontrado")
             }
         }catch (err: any){
-            if(res.statusCode === 200){
-                res.status(500).end()
-            }else {
-                res.end()
-            }
+            res.status(400).send({message: err.message})
         }
 })
 
@@ -83,14 +80,36 @@ app.get(
                 res.status(404).send("País não encontrado")
             }
         }catch(err: any) {
-            if(res.statusCode === 200){
-                res.status(500).end()
-            }else {
-                res.end()
-            }
+            res.status(400).send({message: err.message})
     }
 })
 
+//ENDPOINT  para alterar o nome de um país ou de sua capital
+app.put(
+    "/countries/:id", 
+    (req: Request, res: Response) => {
+        try{
+            const id = req.params.id
+            let result = countries.find((country)=>{
+                return country.id === Number(id)
+            })
+
+            const newResult = {
+                id: result?.id,
+                name: req.body.name,
+                capital: req.body.capital,
+                continent: result?.continent
+            }
+            if (result === undefined){
+                throw new Error("Nenhum resultado foi encontrado")
+            }
+            result.name = newResult.name
+            result.capital = newResult.capital
+            res.status(200).send(newResult)
+        }catch (err: any){
+            res.status(400).send({message: err.message})
+        }
+})
 
 
 const server = app.listen(process.env.PORT || 3003, ()=>{
