@@ -9,6 +9,8 @@ const app: Express = express();
 app.use(express.json());
 app.use(cors());
 
+
+
 app.get("/users", (req: Request, res: Response) => {
     let errorCode = 400
     
@@ -23,6 +25,21 @@ app.get("/users", (req: Request, res: Response) => {
         res.status(errorCode).send({message: err.message})
     }
 })
+
+app.get("/users/search", (req:Request, res: Response) => {
+    let errorCode = 400
+    try{
+        const userType: string = req.query.usertype as string
+        const userFind: user[] | undefined = users.filter(user => user.type === userType)
+        if(!userFind){
+            errorCode = 404
+            throw new Error('Nenhum usuário encontrado')
+        }
+        res.status(200).send(userFind)
+    }catch(err: any){
+        res.status(errorCode).send({message: err.message})
+    }
+}) 
 
 const server = app.listen(process.env.PORT || 3003, () => {
     if(server){
