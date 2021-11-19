@@ -10,7 +10,7 @@ Exercício 2
 a - Os parâmetros foram passados por query params. Acho uma forma mais organizada de fazer uma "filtragem" de dados
 b - Não intendi muito bem a pergunta, se essa forma de garantir que apenas types válidos seja feita na hora de salvar 
     os dados acho que a melhor forma é criar um enum, como está no notion, mas se for na hora da pesquisa acredito 
-    que esse detalhe tenha que estar na documentação da API.
+    que esse detalhe tenha que estar na documentação da API e colocando uma validação com uma mensagem de erro.
 
 ---------------------------------------------------------------
 
@@ -22,3 +22,10 @@ a - Ainda acho que para esse tipo de busca deva ser usado o query params, pois a
 ---------------------------------------------------------------
 
 Exercício 4
+a - Nada mudou na execução ao trocar o endpoint para PUT
+b - Acredito que ele possa ser usado sim, pois na sua descrição diz q ele altera um recurso ou cria se ele não existir, 
+    mas por questão de organização deveria ser usado o POST em uma situação onde a criação de um recurso é explicita.
+
+
+Fiquei com uma dúvida, eu criei o enum dos types permitidos, porém, se eu coloco um valor diferente deles no body o usuário é criado normalmente,
+eu não deveria ter me deparado com um erro?
