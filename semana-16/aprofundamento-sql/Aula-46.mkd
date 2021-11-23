@@ -1,8 +1,55 @@
 ### Exercício - 1
+a)
+O comando altera a tabela Actor deletando a coluna salary
 
+b)
+O comando altera a tabela Actor mudando o nome da coluna gender para sex com o tipo varchar(6)
 
+c)
+O comando altera a tabela Actor mantendo o nome da coluna gender mas alterando seu tipo para varchar(255)
+
+d)
+```sql
+ALTER TABLE Actor CHANGE gender gender VARCHAR(100);
+```
 ### Exercício - 2
+a)
+```sql
+UPDATE Actor
+SET 
+	name = "",
+    birth_date = ""
+WHERE id = "003";
+```
 
+b)
+```sql
+UPDATE Actor
+SET 
+	name = "JULIANA PAES"
+WHERE name = "Juliana Paes";
+
+UPDATE Actor
+SET 
+	name = "Juliana Paes"
+WHERE name = "JULIANA PAES";
+```
+
+c)
+```sql
+UPDATE Actor 
+SET
+	id = "",
+	name = "",
+	salary = 0,
+    birth_date = "",
+    gender = ""
+WHERE id = 005;
+```
+
+d)
+0 row(s) affected Rows matched: 0  Changed: 0  Warnings: 0
+A resposta mostra que 0 linhas foram afetadas nesse comando, ou seja, ao tentar realizar uma atualização de um dado que não exista na tabela não irá gerar nenhum erro, apenas não afetará nenhuma linha 
 
 ### Exercício - 3
 
