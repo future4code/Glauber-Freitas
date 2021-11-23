@@ -1,0 +1,211 @@
+### Exercício - 1
+
+```sql
+CREATE TABLE Actor (
+    id VARCHAR(255) PRIMARY KEY,
+    name VARCHAR (255) NOT NULL,
+    salary FLOAT NOT NULL,
+    birth_date DATE NOT NULL,
+    gender VARCHAR(6) NOT NULL
+);
+SHOW DATABASES;
+SHOW TABLES;
+DESCRIBE Actor;
+```
+a) 
+CREATE TABLE - cria uma tabela,
+VARCHAR(n) -  armazena um total de n caracteres na mémoria para uma string, mas usará somente o necessário,
+PRIMARY KEY - define como a chave priimária da tabela,
+NOT NULL - define que o campo é obrigatório.
+
+b)
+SHOW DATABASES - mostra todos os bancos de dados no servidor que está sendo acessado 
+SHOW TABLES - mostra todas as tabelas no banco que está sendo utilizado
+
+c)
+Ele mostra todos os campos da tabela e suas propriedades como qual é a chave primária, se é um campo obrigatório e seu valor inicial padrão.
+
+### Exercício - 2
+
+```sql
+INSERT INTO Actor (id, name, salary, birth_date, gender)
+VALUES(
+  "001", 
+  "Tony Ramos",
+  400000,
+  "1948-08-25", 
+  "male"
+);
+
+INSERT INTO Actor (id, name, salary, birth_date, gender)
+VALUES(
+  "002", 
+  "Glória Pires",
+  1200000,
+  "1963-08-23", 
+  "female"
+);
+
+
+INSERT INTO Actor (id, name, salary, birth_date, gender)
+VALUES(
+  "002", 
+  "Fernanda Montenegro",
+  400000,
+  "1929-10-19", 
+  "female"
+);
+
+INSERT INTO Actor (id, name, salary)
+VALUES(
+  "003", 
+  "Fernanda Montenegro",
+  300000,
+  "1929-10-19", 
+  "female"
+);
+
+INSERT INTO Actor (id, salary, birth_date, gender)
+VALUES(
+  "004",
+  400000,
+  "1949-04-18", 
+  "male"
+);
+
+INSERT INTO Actor (id, name, salary, birth_date, gender)
+VALUES(
+  "005", 
+  "Juliana Paes",
+  719333.33,
+  1979-03-26, 
+  "female"
+);
+
+```
+
+b)
+Error Code: 1062. Duplicate entry '002' for key 'PRIMARY' - Entrada duplicada '002' para chave 'PRIMARY'
+Esse erro ocorreu porque a coluna se trata de uma chave primaria e não pode ter um valor duplicado.
+
+c)
+Error Code: 1136. Column count doesn't match value count at row 1 - A quantidade de colunas não corresponde a quantidade de valores
+Esse erro ocorreu porque a quantidade de valores é maior do que a quantidade de colunas especificadas.
+
+d)
+Error Code: 1364. Field 'name' doesn't have a default value - O campo 'name' não possui um valor padrão
+Esse erro ocorreu porque o campo nome não tem um valor padrão especificado, que deveria ser usado quando não se coloca um valor na hora de inserir na tabela
+
+e)
+Error Code: 1292. Incorrect date value: '1950' for column 'birth_date' at row 1 - Valor incorreto de data: '1950' para a coluna 'birth-date'
+Esse erro ocorreu porque a data está sendo passada com um tipo errado 
+
+### Exercício - 3
+
+```sql
+SELECT id, nome from Actor WHERE id = "002"
+```
+
+a)
+```sql
+SELECT * FROM Actor WHERE gender = 'female'
+```
+
+b)
+```sql
+SELECT salary FROM Actor WHERE name = 'Tony Ramos'
+```
+
+c)
+```sql
+SELECT * FROM Actor WHERE gender = "invalid"
+```
+O resultado retornou 0 linhas pois não existe nenhuma com esse valor na tabela
+
+d)
+``` sql
+SELECT id, name, salary FROM Actor WHERE salary <= 500000
+```
+
+e)
+Error Code: 1054. Unknown column 'nome' in 'field list' - Coluna desconhecida 'nome' em 'lista de campos'
+```sql
+SELECT id, name from Actor WHERE id = "002"
+```
+
+### Exercício - 4
+
+```sql
+SELECT * FROM Actor
+WHERE (name LIKE "A%" OR name LIKE "J%") AND salary > 300000
+```
+a)
+A query acima retorna todos os campos da tabela Actor onde os nomes começam com A ou J e tenham um salário maior q R$ 300.000 
+
+b)
+```sql
+SELECT * FROM Actor
+WHERE (name NOT LIKE "A%") AND salary > 350000
+```
+
+c)
+```sql
+SELECT * FROM Actor
+WHERE (name  LIKE "%G%" OR "%g%")
+```
+
+d)
+```sql
+SELECT * FROM Actor
+WHERE (name  LIKE "%G%" OR name LIKE "%g%" OR name LIKE "%A%" OR name LIKE "%a%") AND salary BETWEEN 350000 AND 900000;
+```
+
+### Exercício - 5
+a)
+```sql
+CREATE TABLE Filmes (
+id varchar(255) PRIMARY KEY,
+title varchar(255) NOT NULL,
+synopsis TEXT NOT NULL,
+release_date DATE NOT NULL,
+rating int NOT NULL
+);
+```
+A query realiza a criação de uma tabela com nome "Filmes" com os campos id, title, synopsis, release_datee rating com os respectivos tipos varchar(255), varchar(255), text, date, int e todos obrigatorios
+
+### Exercício - 6
+a)
+```sql
+SELECT id, title, rating FROM Movies WHERE id = "";
+```
+
+b)
+```sql
+SELECT * FROM Movies WHere name = "";
+```
+
+c)
+```sql
+SELECT id, title, synopsis FROM Movies WHERE rating >=7;
+```
+
+### Exercício - 7
+a)
+```sql
+SELECT * FROM Movies WHERE title LIKE "%vida%";
+```
+
+b)
+```sql
+SELECT * FROM Movies WHERE title LIKE "%BUSCA%" OR synopsis LIKE "%BUSCA%";
+```
+
+c)
+```sql
+SELECT * FROM Movies WHERE release_date < CURDATE();
+```
+
+d)
+```sql
+SELECT * FROM Movies WHERE release_date < CURDATE() AND title LIKE "%BUSCA%" OR synopsis LIKE "%BUSCA%" AND rating > 7;
+```
