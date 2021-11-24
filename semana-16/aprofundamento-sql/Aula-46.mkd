@@ -104,8 +104,29 @@ e)
 SELECT AVG(salary), gender FROM Actor GROUP BY gender; 
 ```
 ### Exercício - 6
+a)
+```sql
+ALTER TABLE Movies ADD COLUMN playing_limit_date DATE;
+```
 
+b)
+```sql
+ALTER TABLE Movies CHANGE COLUMN rating rating FLOAT;
+```
 
+c)
+```sql
+UPDATE Movies SET playing_limit_date = "2021-11-30" WHERE id = "001";
+UPDATE Movies SET playing_limit_date = "2020-11-30" WHERE id = "002";
+```
+
+d)
+```sql
+DELETE FROM Movies WHERE id = "004";
+UPDATE Movies SET synopsis = "" WHERE id = "004";
+```
+0 row(s) affected Rows matched: 0  Changed: 0  Warnings: 0
+O resultado mostra que 0 linhas foram afetadas com o comando, o comando foi correto mas como não foi encontrado nenhum resultado com o parâmetro passado nenhuma linha foi alterada.
 ### Exercício - 7
 
 
