@@ -52,7 +52,15 @@ d)
 A resposta mostra que 0 linhas foram afetadas nesse comando, ou seja, ao tentar realizar uma atualização de um dado que não exista na tabela não irá gerar nenhum erro, apenas não afetará nenhuma linha 
 
 ### Exercício - 3
+a)
+```sql
+DELETE FROM Actor WHERE name = "Fernanda Montenegro";
+```
 
+b)
+```sql
+DELETE FROM Actor WHERE gender = "male" AND salary > 1000000;
+```
 
 ### Exercício - 4
 
