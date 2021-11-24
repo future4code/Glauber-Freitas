@@ -50,7 +50,6 @@ WHERE id = 005;
 d)
 0 row(s) affected Rows matched: 0  Changed: 0  Warnings: 0
 A resposta mostra que 0 linhas foram afetadas nesse comando, ou seja, ao tentar realizar uma atualização de um dado que não exista na tabela não irá gerar nenhum erro, apenas não afetará nenhuma linha 
-
 ### Exercício - 3
 a)
 ```sql
@@ -61,12 +60,51 @@ b)
 ```sql
 DELETE FROM Actor WHERE gender = "male" AND salary > 1000000;
 ```
-
 ### Exercício - 4
+a)
+```sql
+SELECT MAX(salary) FROM Actor;
+```
 
+b)
+```sql
+SELECT MIN(salary) FROM Actor WHERE gender = "female";
+```
 
+c)
+```sql
+SELECT COUNT(*) FROM Actor WHERE gender = "female";
+```
+
+d)
+```sql
+SELECT SUM(salary) FROM Actor;
+```
 ### Exercício - 5
+a)
+```sql
 
+```
+
+b)
+```sql
+SELECT id, name FROM Actor where gender = "male" ORDER BY name DESC;
+```
+
+c)
+```sql
+
+```
+
+d)
+```sql
+
+```
+
+e)
+```sql
+
+```
 
 ### Exercício - 6
 
