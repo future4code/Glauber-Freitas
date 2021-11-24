@@ -128,6 +128,33 @@ UPDATE Movies SET synopsis = "" WHERE id = "004";
 0 row(s) affected Rows matched: 0  Changed: 0  Warnings: 0
 O resultado mostra que 0 linhas foram afetadas com o comando, o comando foi correto mas como não foi encontrado nenhum resultado com o parâmetro passado nenhuma linha foi alterada.
 ### Exercício - 7
+a)
+```sql
+SELECT COUNT(*) FROM Movies WHERE rating > 7.5;
+```
 
+b)
+```sql
+SELECT AVG(rating) FROM Movies;
+```
 
+c)
+```sql
+SELECT COUNT(*) FROM Movies WHERE playing_limit_date > CURDATE();
+```
+
+d)
+```sql
+SELECT COUNT(*) FROM Movies WHERE release_date > CURDATE();
+```
+
+e)
+```sql
+SELECT MAX(rating) FROM Movies;
+```
+
+f)
+```sql
+SELECT MIN(rating) FROM Movies;
+```
 ### Exercício - 8
