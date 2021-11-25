@@ -1,0 +1,23 @@
+## Exercício 1
+a)
+Quando fazemos uma requisição no banco usando o raw ela retorna um array com os dados solicitados e mais algumas informações, porém, o importante para a requisição é apenas a primeira posição do array.
+
+b)
+```ts
+const findActorByName = async (name: string): Promise<any> => {
+  const result = await connection.raw(`
+    SELECT * FROM Actor WHERE name = "${name}"
+  `)
+  return result[0]
+}
+```
+
+c)
+```ts
+const countGender = async (gender: string): Promise<any> => {
+  const result = await connection.raw(`
+      SELECT COUNT(*) FROM Actor WHERE gender = "${gender}"
+  `)
+  return result[0]
+}
+```
