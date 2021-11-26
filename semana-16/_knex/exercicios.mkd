@@ -1,0 +1,195 @@
+## Exercício 1
+a)
+Quando fazemos uma requisição no banco usando o raw ela retorna um array com os dados solicitados e mais algumas informações, porém, o importante para a requisição é apenas a primeira posição do array.
+
+b)
+```ts
+const findActorByName = async (name: string): Promise<any> => {
+  const result = await connection.raw(`
+    SELECT * FROM Actor WHERE name = "${name}"
+  `)
+  return result[0]
+}
+```
+
+c)
+```ts
+const countGender = async (gender: string): Promise<any> => {
+  const result = await connection.raw(`
+      SELECT COUNT(*) FROM Actor WHERE gender = "${gender}"
+  `)
+  return result[0]
+}
+```
+## Exercício 2
+a)
+```ts
+const updateSalary = async (id: string, salary:number): Promise<any> => {
+  await connection("Actor")
+  .update({
+    salary: salary
+  })
+  .where("id",id)
+} 
+```
+
+b)
+```ts
+const deleteActor = async (id: string): Promise<any> => {
+  await connection("Actor")
+  .delete()
+  .where("id", id)
+}
+```
+
+c)
+```ts
+const avgSalaryByGender = async (gender: string): Promise<any> => {
+  const result = await connection("Actor")
+  .avg("salary")
+  .where("gender", gender)
+  return result[0]
+}
+
+```
+## Exercício 3
+a)
+```ts
+app.get("/atores/:id", async (req:Request, res: Response) => {
+  try{
+    const id = req.params.id
+    const actor = await connection("Actor")
+    .select("*")
+    .where("id", id)
+    console.log(actor)
+    res.status(200).send({actor})
+  }catch (err: any){
+    res.status(400).send({message: err.message})
+  }
+})
+```
+
+b)
+```ts
+app.get("/atores", async (req: Request, res: Response) => {
+  try{
+    const gender = req.query.gender as string
+    const count = await connection("Actor") 
+    .count("*")
+    .where("gender", gender)
+    res.status(200).send( {quantity: count})
+  }catch (err: any){
+      res.status(400).send({message: err.message})
+  }
+})
+```
+## Exercício 4
+a)
+```ts
+app.put('/atores', async (req:Request, res: Response) => {
+  try{
+      await connection("Actor")
+      .update({
+          salary: req.body.salary
+      })
+      .where({id: req.body.id})
+      res.status(200).send({message: "Salário Atualizado"})
+  }catch(err: any){
+      res.status(400).send({message: err.message})
+  }
+})
+```
+
+b)
+```ts
+app.delete("/atores/:id", async (req: Request, res: Response) => {
+  try{
+    await connection("Actor")
+    .delete()
+    .where("id", req.params.id)
+    res.status(200).send("Ator deletado com sucesso!")
+  }catch (err: any){
+    res.status(400).send({message: err.message})
+  }
+})
+```
+
+## Exercício 5
+```ts
+const createMovie = async (
+  id: string,
+  title: string,
+  synopsis: string,
+  release_date: Date,
+  rating: number,
+  playing_limit_date: Date
+) => {
+  await connection("Movies")
+  .insert({
+    id:id,
+    title:title,
+    synopsis: synopsis,
+    release_date: release_date,
+    rating: rating,
+    playing_limit_date: playing_limit_date
+  })
+  
+}
+
+app.post("/movie", async (req: Request, res: Response) => {
+  try{
+    await createMovie(
+      req.body.id,
+      req.body.title,
+      req.body.synopsis,
+      new Date(req.body.release_date),
+      req.body.rating,
+      new Date(req.body.playing_limit_date)
+    )
+    res.status(200).send("Filme criado com sucesso!")
+  }catch (err: any){
+    res.status(400).send({message: err.message})
+  }
+})
+```
+
+# Exercício 6
+```ts
+const getMovies = async(): Promise<any> => {
+  const result = await connection("Movies")
+  .select("*")
+  .limit(15)
+  return result
+}
+
+app.get("/movies/all", async(req: Request, res: Response) => {
+  try{
+    const result = await getMovies()
+    console.log(result)
+    res.status(200).send({movies: result})
+  }catch (err: any){
+    res.status(400).send({message: err.message})
+  }
+})
+```
+
+## Exercício 7
+```ts
+const findMovie = async (search: string): Promise<any> =>{
+  const result = await connection("Movies")
+  .select("*")
+  .where("title", 'like', `%${search}%`) 
+  .orWhere ("synopsis", 'like', `%${search}%`)
+  return result
+}
+
+app.get("/movies/search", async (req: Request, res: Response) => {
+  try{
+    const search = req.query.search as string
+    const result = await findMovie(search)
+    res.status(200).send({movies: result})
+  }catch (err: any){
+    res.status(400).send({message: err.message})
+  }
+})
+```
