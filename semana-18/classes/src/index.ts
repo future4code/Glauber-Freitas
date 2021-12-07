@@ -15,12 +15,34 @@ app.use(cors());
 //c -
 //Para acessarmos as propriedades privadas de uma classe usamos os metodos get e set.
 
+class Transaction {
+    private date: string;
+    private value: number;
+    private description: string;
+    
+    constructor(date: string, value: number, description: string) {
+        this.date = date;
+        this.value = value;
+        this.description = description
+    }
+
+    getDate(): string{
+        return this.date
+    }
+    getValue(): number{
+        return this.value
+    }
+    getDescription(): string{
+        return this.description
+    }
+}
+
 class UserAccount {
     private cpf: string;
     private name: string;
     private age: number;
     private balance: number = 0;
-    //private transactions: Transaction[] = [];
+    private transactions: Transaction[] = [];
 
     constructor(
         cpf: string,
@@ -33,20 +55,20 @@ class UserAccount {
         this.age = age;
     }
 
-    getcpf(): string{
+    getCpf(): string{
         return this.cpf;
     }
-    getname(): string {
+    getName(): string {
         return this.name;
     }
-    getage(): number{
+    getAge(): number{
         return this.age;
     }
 }
 
 const user = new UserAccount("cpf teste", "nome teste", 25)
 console.log(user)
-const userName = user.getname()
+const userName = user.getName()
 console.log(userName)
 
 const server = app.listen(process.env.PORT || 3006, () => {
